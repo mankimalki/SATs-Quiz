@@ -1,0 +1,1054 @@
+[
+  {
+    "question": "What is 15 \u00d7 7?",
+    "options": [
+      "105",
+      "104",
+      "103",
+      "106"
+    ],
+    "correct_answer": "105",
+    "explanation": "15 multiplied by 7 equals 105. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 3 \u00d7 5?",
+    "options": [
+      "16",
+      "15",
+      "17"
+    ],
+    "correct_answer": "15",
+    "explanation": "3 multiplied by 5 equals 15. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 5 \u00d7 3?",
+    "options": [
+      "14",
+      "18",
+      "15"
+    ],
+    "correct_answer": "15",
+    "explanation": "5 multiplied by 3 equals 15. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 13 \u00d7 5?",
+    "options": [
+      "67",
+      "68",
+      "65",
+      "66"
+    ],
+    "correct_answer": "65",
+    "explanation": "13 multiplied by 5 equals 65. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 6 \u00d7 11?",
+    "options": [
+      "67",
+      "66",
+      "69",
+      "65"
+    ],
+    "correct_answer": "66",
+    "explanation": "6 multiplied by 11 equals 66. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 7 \u00d7 15?",
+    "options": [
+      "107",
+      "105",
+      "104"
+    ],
+    "correct_answer": "105",
+    "explanation": "7 multiplied by 15 equals 105. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 20 \u00d7 8?",
+    "options": [
+      "160",
+      "158",
+      "163",
+      "159"
+    ],
+    "correct_answer": "160",
+    "explanation": "20 multiplied by 8 equals 160. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 17 \u00d7 18?",
+    "options": [
+      "304",
+      "309",
+      "306",
+      "307"
+    ],
+    "correct_answer": "306",
+    "explanation": "17 multiplied by 18 equals 306. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 3 \u00d7 4?",
+    "options": [
+      "12",
+      "14",
+      "13"
+    ],
+    "correct_answer": "12",
+    "explanation": "3 multiplied by 4 equals 12. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 12 \u00d7 7?",
+    "options": [
+      "84",
+      "87",
+      "82"
+    ],
+    "correct_answer": "84",
+    "explanation": "12 multiplied by 7 equals 84. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 19 \u00d7 4?",
+    "options": [
+      "76",
+      "77",
+      "78",
+      "75"
+    ],
+    "correct_answer": "76",
+    "explanation": "19 multiplied by 4 equals 76. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 7 \u00d7 3?",
+    "options": [
+      "23",
+      "19",
+      "21",
+      "22"
+    ],
+    "correct_answer": "21",
+    "explanation": "7 multiplied by 3 equals 21. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 16 \u00d7 14?",
+    "options": [
+      "223",
+      "226",
+      "222",
+      "224"
+    ],
+    "correct_answer": "224",
+    "explanation": "16 multiplied by 14 equals 224. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 13 \u00d7 6?",
+    "options": [
+      "80",
+      "79",
+      "76",
+      "78"
+    ],
+    "correct_answer": "78",
+    "explanation": "13 multiplied by 6 equals 78. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 7 \u00d7 6?",
+    "options": [
+      "45",
+      "42",
+      "41"
+    ],
+    "correct_answer": "42",
+    "explanation": "7 multiplied by 6 equals 42. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 16 \u00d7 7?",
+    "options": [
+      "111",
+      "112",
+      "114"
+    ],
+    "correct_answer": "112",
+    "explanation": "16 multiplied by 7 equals 112. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 20 \u00d7 10?",
+    "options": [
+      "201",
+      "202",
+      "200",
+      "198"
+    ],
+    "correct_answer": "200",
+    "explanation": "20 multiplied by 10 equals 200. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 11 \u00d7 15?",
+    "options": [
+      "168",
+      "163",
+      "165"
+    ],
+    "correct_answer": "165",
+    "explanation": "11 multiplied by 15 equals 165. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 8 \u00d7 7?",
+    "options": [
+      "55",
+      "56",
+      "54"
+    ],
+    "correct_answer": "56",
+    "explanation": "8 multiplied by 7 equals 56. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 4 \u00d7 15?",
+    "options": [
+      "59",
+      "58",
+      "60"
+    ],
+    "correct_answer": "60",
+    "explanation": "4 multiplied by 15 equals 60. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 9 \u00d7 11?",
+    "options": [
+      "101",
+      "102",
+      "99"
+    ],
+    "correct_answer": "99",
+    "explanation": "9 multiplied by 11 equals 99. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 17 \u00d7 4?",
+    "options": [
+      "67",
+      "68",
+      "70"
+    ],
+    "correct_answer": "68",
+    "explanation": "17 multiplied by 4 equals 68. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 13 \u00d7 12?",
+    "options": [
+      "156",
+      "154",
+      "159"
+    ],
+    "correct_answer": "156",
+    "explanation": "13 multiplied by 12 equals 156. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 3 \u00d7 14?",
+    "options": [
+      "44",
+      "43",
+      "42",
+      "40"
+    ],
+    "correct_answer": "42",
+    "explanation": "3 multiplied by 14 equals 42. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 20 \u00d7 15?",
+    "options": [
+      "298",
+      "303",
+      "300"
+    ],
+    "correct_answer": "300",
+    "explanation": "20 multiplied by 15 equals 300. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 5 \u00d7 17?",
+    "options": [
+      "85",
+      "84",
+      "86",
+      "88"
+    ],
+    "correct_answer": "85",
+    "explanation": "5 multiplied by 17 equals 85. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 20 \u00d7 20?",
+    "options": [
+      "402",
+      "398",
+      "400"
+    ],
+    "correct_answer": "400",
+    "explanation": "20 multiplied by 20 equals 400. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 10 \u00d7 12?",
+    "options": [
+      "118",
+      "121",
+      "123",
+      "120"
+    ],
+    "correct_answer": "120",
+    "explanation": "10 multiplied by 12 equals 120. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 19 \u00d7 12?",
+    "options": [
+      "231",
+      "229",
+      "230",
+      "228"
+    ],
+    "correct_answer": "228",
+    "explanation": "19 multiplied by 12 equals 228. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 15 \u00d7 4?",
+    "options": [
+      "58",
+      "60",
+      "62",
+      "63"
+    ],
+    "correct_answer": "60",
+    "explanation": "15 multiplied by 4 equals 60. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 5 \u00d7 3?",
+    "options": [
+      "15",
+      "18",
+      "14",
+      "17"
+    ],
+    "correct_answer": "15",
+    "explanation": "5 multiplied by 3 equals 15. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 11 \u00d7 2?",
+    "options": [
+      "21",
+      "22",
+      "25"
+    ],
+    "correct_answer": "22",
+    "explanation": "11 multiplied by 2 equals 22. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 9 \u00d7 3?",
+    "options": [
+      "28",
+      "30",
+      "27",
+      "25"
+    ],
+    "correct_answer": "27",
+    "explanation": "9 multiplied by 3 equals 27. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 5 \u00d7 16?",
+    "options": [
+      "82",
+      "79",
+      "81",
+      "80"
+    ],
+    "correct_answer": "80",
+    "explanation": "5 multiplied by 16 equals 80. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 15 \u00d7 20?",
+    "options": [
+      "299",
+      "301",
+      "302",
+      "300"
+    ],
+    "correct_answer": "300",
+    "explanation": "15 multiplied by 20 equals 300. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 2 \u00d7 18?",
+    "options": [
+      "36",
+      "39",
+      "38",
+      "35"
+    ],
+    "correct_answer": "36",
+    "explanation": "2 multiplied by 18 equals 36. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 14 \u00d7 20?",
+    "options": [
+      "281",
+      "280",
+      "279",
+      "282"
+    ],
+    "correct_answer": "280",
+    "explanation": "14 multiplied by 20 equals 280. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 4 \u00d7 13?",
+    "options": [
+      "52",
+      "55",
+      "50",
+      "54"
+    ],
+    "correct_answer": "52",
+    "explanation": "4 multiplied by 13 equals 52. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 18 \u00d7 18?",
+    "options": [
+      "325",
+      "327",
+      "324",
+      "323"
+    ],
+    "correct_answer": "324",
+    "explanation": "18 multiplied by 18 equals 324. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 18 \u00d7 13?",
+    "options": [
+      "233",
+      "235",
+      "234",
+      "232"
+    ],
+    "correct_answer": "234",
+    "explanation": "18 multiplied by 13 equals 234. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 5 \u00d7 4?",
+    "options": [
+      "20",
+      "19",
+      "22",
+      "21"
+    ],
+    "correct_answer": "20",
+    "explanation": "5 multiplied by 4 equals 20. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 14 \u00d7 10?",
+    "options": [
+      "140",
+      "142",
+      "141",
+      "139"
+    ],
+    "correct_answer": "140",
+    "explanation": "14 multiplied by 10 equals 140. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 7 \u00d7 8?",
+    "options": [
+      "59",
+      "58",
+      "56"
+    ],
+    "correct_answer": "56",
+    "explanation": "7 multiplied by 8 equals 56. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 15 \u00d7 8?",
+    "options": [
+      "122",
+      "123",
+      "120",
+      "118"
+    ],
+    "correct_answer": "120",
+    "explanation": "15 multiplied by 8 equals 120. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 3 \u00d7 17?",
+    "options": [
+      "54",
+      "51",
+      "49"
+    ],
+    "correct_answer": "51",
+    "explanation": "3 multiplied by 17 equals 51. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 5 \u00d7 6?",
+    "options": [
+      "30",
+      "29",
+      "31",
+      "28"
+    ],
+    "correct_answer": "30",
+    "explanation": "5 multiplied by 6 equals 30. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 3 \u00d7 11?",
+    "options": [
+      "34",
+      "33",
+      "36",
+      "31"
+    ],
+    "correct_answer": "33",
+    "explanation": "3 multiplied by 11 equals 33. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 8 \u00d7 17?",
+    "options": [
+      "139",
+      "138",
+      "137",
+      "136"
+    ],
+    "correct_answer": "136",
+    "explanation": "8 multiplied by 17 equals 136. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 14 \u00d7 16?",
+    "options": [
+      "226",
+      "224",
+      "225",
+      "223"
+    ],
+    "correct_answer": "224",
+    "explanation": "14 multiplied by 16 equals 224. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 2 \u00d7 9?",
+    "options": [
+      "21",
+      "20",
+      "16",
+      "18"
+    ],
+    "correct_answer": "18",
+    "explanation": "2 multiplied by 9 equals 18. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 15 \u00d7 11?",
+    "options": [
+      "166",
+      "165",
+      "164"
+    ],
+    "correct_answer": "165",
+    "explanation": "15 multiplied by 11 equals 165. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 12 \u00d7 3?",
+    "options": [
+      "36",
+      "38",
+      "39"
+    ],
+    "correct_answer": "36",
+    "explanation": "12 multiplied by 3 equals 36. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 15 \u00d7 19?",
+    "options": [
+      "285",
+      "287",
+      "284"
+    ],
+    "correct_answer": "285",
+    "explanation": "15 multiplied by 19 equals 285. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 15 \u00d7 2?",
+    "options": [
+      "33",
+      "28",
+      "30",
+      "29"
+    ],
+    "correct_answer": "30",
+    "explanation": "15 multiplied by 2 equals 30. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 3 \u00d7 3?",
+    "options": [
+      "10",
+      "9"
+    ],
+    "correct_answer": "9",
+    "explanation": "3 multiplied by 3 equals 9. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 13 \u00d7 6?",
+    "options": [
+      "79",
+      "78",
+      "76",
+      "81"
+    ],
+    "correct_answer": "78",
+    "explanation": "13 multiplied by 6 equals 78. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 16 \u00d7 9?",
+    "options": [
+      "144",
+      "146",
+      "145",
+      "142"
+    ],
+    "correct_answer": "144",
+    "explanation": "16 multiplied by 9 equals 144. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 13 \u00d7 20?",
+    "options": [
+      "258",
+      "260",
+      "259",
+      "263"
+    ],
+    "correct_answer": "260",
+    "explanation": "13 multiplied by 20 equals 260. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 17 \u00d7 7?",
+    "options": [
+      "119",
+      "117",
+      "120"
+    ],
+    "correct_answer": "119",
+    "explanation": "17 multiplied by 7 equals 119. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 9 \u00d7 4?",
+    "options": [
+      "36",
+      "34",
+      "35"
+    ],
+    "correct_answer": "36",
+    "explanation": "9 multiplied by 4 equals 36. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 16 \u00d7 11?",
+    "options": [
+      "176",
+      "175",
+      "178",
+      "174"
+    ],
+    "correct_answer": "176",
+    "explanation": "16 multiplied by 11 equals 176. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 10 \u00d7 2?",
+    "options": [
+      "18",
+      "22",
+      "19",
+      "20"
+    ],
+    "correct_answer": "20",
+    "explanation": "10 multiplied by 2 equals 20. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 15 \u00d7 8?",
+    "options": [
+      "119",
+      "123",
+      "120"
+    ],
+    "correct_answer": "120",
+    "explanation": "15 multiplied by 8 equals 120. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 18 \u00d7 12?",
+    "options": [
+      "214",
+      "219",
+      "215",
+      "216"
+    ],
+    "correct_answer": "216",
+    "explanation": "18 multiplied by 12 equals 216. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 5 \u00d7 18?",
+    "options": [
+      "93",
+      "91",
+      "90"
+    ],
+    "correct_answer": "90",
+    "explanation": "5 multiplied by 18 equals 90. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 9 \u00d7 9?",
+    "options": [
+      "82",
+      "81",
+      "79"
+    ],
+    "correct_answer": "81",
+    "explanation": "9 multiplied by 9 equals 81. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 7 \u00d7 12?",
+    "options": [
+      "83",
+      "84",
+      "82"
+    ],
+    "correct_answer": "84",
+    "explanation": "7 multiplied by 12 equals 84. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 4 \u00d7 2?",
+    "options": [
+      "11",
+      "10",
+      "9",
+      "8"
+    ],
+    "correct_answer": "8",
+    "explanation": "4 multiplied by 2 equals 8. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 14 \u00d7 6?",
+    "options": [
+      "84",
+      "85",
+      "86"
+    ],
+    "correct_answer": "84",
+    "explanation": "14 multiplied by 6 equals 84. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 5 \u00d7 16?",
+    "options": [
+      "80",
+      "78",
+      "83",
+      "79"
+    ],
+    "correct_answer": "80",
+    "explanation": "5 multiplied by 16 equals 80. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 4 \u00d7 12?",
+    "options": [
+      "47",
+      "51",
+      "48"
+    ],
+    "correct_answer": "48",
+    "explanation": "4 multiplied by 12 equals 48. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 14 \u00d7 8?",
+    "options": [
+      "114",
+      "112",
+      "111"
+    ],
+    "correct_answer": "112",
+    "explanation": "14 multiplied by 8 equals 112. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 12 \u00d7 7?",
+    "options": [
+      "85",
+      "83",
+      "84"
+    ],
+    "correct_answer": "84",
+    "explanation": "12 multiplied by 7 equals 84. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 11 \u00d7 19?",
+    "options": [
+      "210",
+      "209",
+      "207"
+    ],
+    "correct_answer": "209",
+    "explanation": "11 multiplied by 19 equals 209. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 16 \u00d7 8?",
+    "options": [
+      "130",
+      "127",
+      "128"
+    ],
+    "correct_answer": "128",
+    "explanation": "16 multiplied by 8 equals 128. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 20 \u00d7 14?",
+    "options": [
+      "280",
+      "278",
+      "281"
+    ],
+    "correct_answer": "280",
+    "explanation": "20 multiplied by 14 equals 280. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 15 \u00d7 11?",
+    "options": [
+      "165",
+      "168",
+      "164",
+      "166"
+    ],
+    "correct_answer": "165",
+    "explanation": "15 multiplied by 11 equals 165. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 5 \u00d7 5?",
+    "options": [
+      "25",
+      "26",
+      "24"
+    ],
+    "correct_answer": "25",
+    "explanation": "5 multiplied by 5 equals 25. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 14 \u00d7 5?",
+    "options": [
+      "70",
+      "72",
+      "73",
+      "68"
+    ],
+    "correct_answer": "70",
+    "explanation": "14 multiplied by 5 equals 70. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 13 \u00d7 12?",
+    "options": [
+      "157",
+      "155",
+      "156"
+    ],
+    "correct_answer": "156",
+    "explanation": "13 multiplied by 12 equals 156. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 14 \u00d7 7?",
+    "options": [
+      "98",
+      "96",
+      "97",
+      "99"
+    ],
+    "correct_answer": "98",
+    "explanation": "14 multiplied by 7 equals 98. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 8 \u00d7 10?",
+    "options": [
+      "80",
+      "78",
+      "83"
+    ],
+    "correct_answer": "80",
+    "explanation": "8 multiplied by 10 equals 80. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 8 \u00d7 17?",
+    "options": [
+      "137",
+      "134",
+      "136",
+      "135"
+    ],
+    "correct_answer": "136",
+    "explanation": "8 multiplied by 17 equals 136. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 12 \u00d7 3?",
+    "options": [
+      "37",
+      "35",
+      "36"
+    ],
+    "correct_answer": "36",
+    "explanation": "12 multiplied by 3 equals 36. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 2 \u00d7 3?",
+    "options": [
+      "7",
+      "5",
+      "6"
+    ],
+    "correct_answer": "6",
+    "explanation": "2 multiplied by 3 equals 6. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 13 \u00d7 2?",
+    "options": [
+      "26",
+      "28",
+      "29"
+    ],
+    "correct_answer": "26",
+    "explanation": "13 multiplied by 2 equals 26. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 6 \u00d7 2?",
+    "options": [
+      "15",
+      "12",
+      "10",
+      "13"
+    ],
+    "correct_answer": "12",
+    "explanation": "6 multiplied by 2 equals 12. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 10 \u00d7 7?",
+    "options": [
+      "72",
+      "68",
+      "70",
+      "73"
+    ],
+    "correct_answer": "70",
+    "explanation": "10 multiplied by 7 equals 70. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 15 \u00d7 12?",
+    "options": [
+      "183",
+      "180",
+      "182"
+    ],
+    "correct_answer": "180",
+    "explanation": "15 multiplied by 12 equals 180. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 14 \u00d7 3?",
+    "options": [
+      "41",
+      "42",
+      "43",
+      "45"
+    ],
+    "correct_answer": "42",
+    "explanation": "14 multiplied by 3 equals 42. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 9 \u00d7 16?",
+    "options": [
+      "144",
+      "147",
+      "145"
+    ],
+    "correct_answer": "144",
+    "explanation": "9 multiplied by 16 equals 144. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 5 \u00d7 3?",
+    "options": [
+      "16",
+      "18",
+      "15",
+      "17"
+    ],
+    "correct_answer": "15",
+    "explanation": "5 multiplied by 3 equals 15. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 18 \u00d7 18?",
+    "options": [
+      "324",
+      "322",
+      "323"
+    ],
+    "correct_answer": "324",
+    "explanation": "18 multiplied by 18 equals 324. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 2 \u00d7 6?",
+    "options": [
+      "10",
+      "13",
+      "15",
+      "12"
+    ],
+    "correct_answer": "12",
+    "explanation": "2 multiplied by 6 equals 12. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 13 \u00d7 6?",
+    "options": [
+      "76",
+      "78",
+      "77"
+    ],
+    "correct_answer": "78",
+    "explanation": "13 multiplied by 6 equals 78. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 7 \u00d7 17?",
+    "options": [
+      "121",
+      "118",
+      "117",
+      "119"
+    ],
+    "correct_answer": "119",
+    "explanation": "7 multiplied by 17 equals 119. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 7 \u00d7 12?",
+    "options": [
+      "84",
+      "87",
+      "83",
+      "82"
+    ],
+    "correct_answer": "84",
+    "explanation": "7 multiplied by 12 equals 84. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 18 \u00d7 8?",
+    "options": [
+      "145",
+      "147",
+      "144",
+      "146"
+    ],
+    "correct_answer": "144",
+    "explanation": "18 multiplied by 8 equals 144. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 20 \u00d7 3?",
+    "options": [
+      "61",
+      "63",
+      "60"
+    ],
+    "correct_answer": "60",
+    "explanation": "20 multiplied by 3 equals 60. You can calculate this using a multiplication grid or repeated addition."
+  },
+  {
+    "question": "What is 17 \u00d7 14?",
+    "options": [
+      "240",
+      "238",
+      "237"
+    ],
+    "correct_answer": "238",
+    "explanation": "17 multiplied by 14 equals 238. You can calculate this using a multiplication grid or repeated addition."
+  }
+]
