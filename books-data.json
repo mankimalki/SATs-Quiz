@@ -1,15 +1,15 @@
 {
   "books": [
     {
-      "title": "New GCSE Mathematics Higher Revision Guide",
+      "title": "GCSE Mathematics Higher Revision Guide",
       "author": "Sarah Johnson",
       "level": "GCSE",
       "subject": "Mathematics",
       "examBoard": "AQA",
       "type": "Revision Guide",
       "isbn": "9781782943951",
-      "image": "book1.jpg",
-      "pdfUrl": "book1.pdf",
+      "image": "https://raw.githubusercontent.com/mankimalki/SATs-Quiz/main/book1.jpg",
+      "pdfUrl": "https://raw.githubusercontent.com/mankimalki/SATs-Quiz/main/book1.pdf",
       "detailUrl": "books/maths-gcse-aqa",
       "isPremium": true
     },
@@ -21,8 +21,8 @@
       "examBoard": "OCR",
       "type": "Textbook",
       "isbn": "9780198351764",
-      "image": "images/biology-alevel.jpg",
-      "pdfUrl": "books/biology-alevel-ocr.pdf",
+      "image": "https://raw.githubusercontent.com/mankimalki/SATs-Quiz/main/book2.jpg",
+      "pdfUrl": "https://raw.githubusercontent.com/mankimalki/SATs-Quiz/main/book2.pdf",
       "detailUrl": "books/biology-alevel-ocr",
       "isPremium": true
     },
@@ -34,8 +34,8 @@
       "examBoard": "None",
       "type": "Practice Papers",
       "isbn": "9781912364457",
-      "image": "images/11plus-verbal.jpg",
-      "pdfUrl": "books/11plus-verbal.pdf",
+      "image": "https://raw.githubusercontent.com/mankimalki/SATs-Quiz/main/book3.jpg",
+      "pdfUrl": "https://raw.githubusercontent.com/mankimalki/SATs-Quiz/main/book3.pdf",
       "detailUrl": "books/11plus-verbal",
       "isPremium": false
     },
@@ -47,8 +47,8 @@
       "examBoard": "None",
       "type": "Workbook",
       "isbn": "9780007562752",
-      "image": "images/science-ks3.jpg",
-      "pdfUrl": "books/science-ks3.pdf",
+      "image": "https://raw.githubusercontent.com/mankimalki/SATs-Quiz/main/book4.jpg",
+      "pdfUrl": "https://raw.githubusercontent.com/mankimalki/SATs-Quiz/main/book4.pdf",
       "detailUrl": "books/science-ks3",
       "isPremium": false
     },
@@ -60,8 +60,8 @@
       "examBoard": "AQA",
       "type": "Revision Guide",
       "isbn": "9781782945849",
-      "image": "images/chemistry-gcse.jpg",
-      "pdfUrl": "books/chemistry-gcse-aqa.pdf",
+      "image": "https://raw.githubusercontent.com/mankimalki/SATs-Quiz/main/book5.jpg",
+      "pdfUrl": "https://raw.githubusercontent.com/mankimalki/SATs-Quiz/main/book5.pdf",
       "detailUrl": "books/chemistry-gcse-aqa",
       "isPremium": true
     },
@@ -73,8 +73,8 @@
       "examBoard": "None",
       "type": "Revision Guide",
       "isbn": "9781407159863",
-      "image": "images/maths-sats.jpg",
-      "pdfUrl": "books/maths-sats.pdf",
+      "image": "https://raw.githubusercontent.com/mankimalki/SATs-Quiz/main/book6.jpg",
+      "pdfUrl": "https://raw.githubusercontent.com/mankimalki/SATs-Quiz/main/book6.pdf",
       "detailUrl": "books/maths-sats",
       "isPremium": false
     },
@@ -86,8 +86,8 @@
       "examBoard": "Edexcel",
       "type": "Textbook",
       "isbn": "9781292244878",
-      "image": "images/physics-alevel.jpg",
-      "pdfUrl": "books/physics-alevel-edexcel.pdf",
+      "image": "https://raw.githubusercontent.com/mankimalki/SATs-Quiz/main/book7.jpg",
+      "pdfUrl": "https://raw.githubusercontent.com/mankimalki/SATs-Quiz/main/book7.pdf",
       "detailUrl": "books/physics-alevel-edexcel",
       "isPremium": true
     },
@@ -99,8 +99,8 @@
       "examBoard": "None",
       "type": "Workbook",
       "isbn": "9780008278038",
-      "image": "images/11plus-nonverbal.jpg",
-      "pdfUrl": "books/11plus-nonverbal.pdf",
+      "image": "https://raw.githubusercontent.com/mankimalki/SATs-Quiz/main/book8.jpg",
+      "pdfUrl": "https://raw.githubusercontent.com/mankimalki/SATs-Quiz/main/book8.pdf",
       "detailUrl": "books/11plus-nonverbal",
       "isPremium": false
     },
@@ -112,21 +112,21 @@
       "examBoard": "Edexcel",
       "type": "Revision Guide",
       "isbn": "9780198432845",
-      "image": "images/history-gcse.jpg",
-      "pdfUrl": "books/history-gcse-edexcel.pdf",
+      "image": "https://raw.githubusercontent.com/mankimalki/SATs-Quiz/main/book9.jpg",
+      "pdfUrl": "https://raw.githubusercontent.com/mankimalki/SATs-Quiz/main/book9.pdf",
       "detailUrl": "books/history-gcse-edexcel",
       "isPremium": true
     },
     {
-      "title": "Primary English Workbook",
+      "title": "New English Workbook",
       "author": "Sarah Lindsay",
       "level": "Primary",
       "subject": "English",
       "examBoard": "None",
       "type": "Workbook",
       "isbn": "9780192768450",
-      "image": "images/english-primary.jpg",
-      "pdfUrl": "books/english-primary.pdf",
+      "image": "https://raw.githubusercontent.com/mankimalki/SATs-Quiz/main/book10.jpg",
+      "pdfUrl": "https://raw.githubusercontent.com/mankimalki/SATs-Quiz/main/book10.pdf",
       "detailUrl": "books/english-primary",
       "isPremium": false
     }
