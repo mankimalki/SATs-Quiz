@@ -1,15 +1,15 @@
 {
   "books": [
     {
-      "title": "GCSE Mathematics Higher Revision Guide",
+      "title": "New GCSE Mathematics Higher Revision Guide",
       "author": "Sarah Johnson",
       "level": "GCSE",
       "subject": "Mathematics",
       "examBoard": "AQA",
       "type": "Revision Guide",
       "isbn": "9781782943951",
-      "image": "https://drive.google.com/uc?export=view&id=1ihjz33HvkaLjvnLGERK_No1kGy0fpAKS",
-      "pdfUrl": "https://drive.google.com/file/d/1uTDDbcbN554MH7P5_b_mdqzq_aAGdXaE/view?usp=drivesdk",
+      "image": "book1.jpg",
+      "pdfUrl": "book1.pdf",
       "detailUrl": "books/maths-gcse-aqa",
       "isPremium": true
     },
