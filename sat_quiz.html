@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#4f46e5"/>
+  <meta name="description" content="SAT Practice Test with Offline Capabilities"/>
+  <title>SAT Proctor | Practice Test</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --primary-dark: #4338ca;
+      --primary-light: #e0e7ff;
+      --light: #f9fafb;
+      --dark: #111827;
+      --gray-dark: #374151;
+      --gray-medium: #6b7280;
+      --gray-light: #e5e7eb;
+      --success: #10b981;
+      --success-light: #d1fae5;
+      --danger: #ef4444;
+      --danger-light: #fee2e2;
+      --warning: #f59e0b;
+      --warning-light: #fef3c7;
+      --border-radius: 12px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+      --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+      --shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
+      --transition-fast: 150ms;
+      --transition-medium: 300ms;
+      --transition-slow: 500ms;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+      padding: 2rem 1rem;
+      position: relative;
+    }
+
+    h1, h2, h3 {
+      color: var(--dark);
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      background: linear-gradient(90deg, var(--primary), #7c3aed);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: gradientShift 8s ease infinite;
+      background-size: 200% 200%;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-lg);
+      margin-bottom: 1.5rem;
+      transition: all var(--transition-medium) ease;
+      border: 1px solid var(--gray-light);
+      transform-origin: top center;
+      opacity: 1;
+    }
+
+    .card.entering {
+      animation: cardEnter var(--transition-medium) ease-out forwards;
+    }
+
+    .card.exiting {
+      animation: cardExit var(--transition-medium) ease-in forwards;
+    }
+
+    select, button, input {
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      font-family: inherit;
+      border-radius: var(--border-radius);
+      transition: all var(--transition-fast) ease;
+      width: 100%;
+    }
+
+    select {
+      border: 1px solid var(--gray-light);
+      background-color: white;
+      color: var(--dark);
+      margin-bottom: 1rem;
+      appearance: none;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-position: right 0.75rem center;
+      background-size: 1rem;
+    }
+
+    select:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-light);
+    }
+
+    button {
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    button::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 5px;
+      height: 5px;
+      background: rgba(255, 255, 255, 0.5);
+      opacity: 0;
+      border-radius: 100%;
+      transform: scale(1, 1) translate(-50%, -50%);
+      transform-origin: 50% 50%;
+    }
+
+    button:focus:not(:active)::after {
+      animation: ripple var(--transition-slow) ease-out;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 4px 6px rgba(79, 70, 229, 0.2);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 8px rgba(79, 70, 229, 0.3);
+    }
+
+    .btn-primary:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 4px rgba(79, 70, 229, 0.2);
+    }
+
+    .btn-outline {
+      background: white;
+      color: var(--primary);
+      border: 1px solid var(--primary);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .btn-outline:hover {
+      background: var(--primary-light);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-outline:active {
+      transform: translateY(0);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    .question {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .options button {
+      text-align: left;
+      padding: 1rem;
+      background: white;
+      color: var(--dark);
+      border: 1px solid var(--gray-light);
+      font-weight: 500;
+      transition: all var(--transition-fast) ease;
+      transform-origin: left center;
+    }
+
+    .options button:hover:not(:disabled) {
+      background: var(--primary-light);
+      border-color: var(--primary);
+      transform: translateX(4px);
+    }
+
+    .options button:disabled {
+      cursor: default;
+    }
+
+    .options button.correct {
+      background: var(--success-light);
+      border-color: var(--success);
+      color: var(--success);
+      animation: pulseSuccess 1s ease;
+    }
+
+    .options button.wrong {
+      background: var(--danger-light);
+      border-color: var(--danger);
+      color: var(--danger);
+      animation: shake 0.5s ease;
+    }
+
+    .explanation {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      background: var(--primary-light);
+      border-radius: var(--border-radius);
+      color: var(--dark);
+      font-size: 0.95rem;
+      border-left: 4px solid var(--primary);
+      animation: fadeIn var(--transition-medium) ease;
+    }
+
+    .correct-explanation {
+      border-left-color: var(--success);
+      background: var(--success-light);
+      animation: fadeIn var(--transition-medium) ease;
+    }
+
+    .incorrect-explanation {
+      border-left-color: var(--danger);
+      background: var(--danger-light);
+      animation: fadeIn var(--transition-medium) ease;
+    }
+
+    .next-btn {
+      margin-top: 1.5rem;
+      animation: fadeInUp var(--transition-medium) ease;
+    }
+
+    .progress-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      gap: 1rem;
+    }
+
+    .progress-bar {
+      height: 6px;
+      background: var(--gray-light);
+      border-radius: 3px;
+      flex-grow: 1;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--primary);
+      transition: width var(--transition-slow) cubic-bezier(0.65, 0, 0.35, 1);
+      position: relative;
+    }
+
+    .progress-fill::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(255, 255, 255, 0.1) 100%
+      );
+      animation: progressShimmer 2s infinite linear;
+    }
+
+    .timer {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
+      color: var(--gray-dark);
+      white-space: nowrap;
+      transition: color var(--transition-fast) ease;
+    }
+
+    .timer svg {
+      width: 1.25rem;
+      height: 1.25rem;
+      transition: transform var(--transition-fast) ease;
+    }
+
+    .timer.warning svg {
+      animation: pulse var(--transition-slow) infinite alternate;
+    }
+
+    .score-display {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 2rem 0;
+      text-align: center;
+      animation: fadeInUp var(--transition-medium) ease;
+    }
+
+    .score-value {
+      color: var(--primary);
+      font-size: 2.5rem;
+      display: block;
+      margin-top: 0.5rem;
+      animation: bounceIn var(--transition-medium) ease;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .stat-card {
+      padding: 1.5rem;
+      border-radius: var(--border-radius);
+      text-align: center;
+      background: var(--light);
+      transition: all var(--transition-fast) ease;
+      animation: fadeIn var(--transition-medium) ease;
+      animation-fill-mode: both;
+    }
+
+    .stat-card:nth-child(1) { animation-delay: 100ms; }
+    .stat-card:nth-child(2) { animation-delay: 200ms; }
+    .stat-card:nth-child(3) { animation-delay: 300ms; }
+    .stat-card:nth-child(4) { animation-delay: 400ms; }
+    .stat-card:nth-child(5) { animation-delay: 500ms; }
+    .stat-card:nth-child(6) { animation-delay: 600ms; }
+
+    .stat-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .stat-value {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.25rem;
+    }
+
+    .stat-label {
+      font-size: 0.875rem;
+      color: var(--gray-medium);
+    }
+
+    .category-tag {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      animation: fadeIn var(--transition-medium) ease;
+    }
+
+    .math-tag {
+      background: var(--primary-light);
+      color: var(--primary);
+    }
+
+    .reading-tag {
+      background: var(--success-light);
+      color: var(--success);
+    }
+
+    .writing-tag {
+      background: var(--warning-light);
+      color: var(--warning);
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .settings-row {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .settings-group {
+      flex: 1;
+      animation: fadeInUp var(--transition-medium) ease;
+      animation-fill-mode: both;
+    }
+
+    .settings-group:nth-child(1) { animation-delay: 100ms; }
+    .settings-group:nth-child(2) { animation-delay: 200ms; }
+
+    .settings-label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: var(--gray-dark);
+    }
+
+    .offline-notice {
+      position: fixed;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--warning);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-md);
+      z-index: 100;
+      display: none;
+      animation: slideUp var(--transition-medium) ease;
+    }
+
+    .typing {
+      border-right: 2px solid var(--primary);
+      animation: blink 1s step-end infinite;
+    }
+
+    .loading-spinner {
+      width: 1.5rem;
+      height: 1.5rem;
+      border: 3px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top-color: white;
+      animation: spin 1s ease-in-out infinite;
+    }
+
+    /* Animations */
+    @keyframes blink {
+      from, to { border-color: transparent }
+      50% { border-color: var(--primary); }
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translate(-50%, 20px);
+      }
+      to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+      }
+    }
+
+    @keyframes bounceIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes pulse {
+      from { transform: scale(1); }
+      to { transform: scale(1.1); }
+    }
+
+    @keyframes pulseSuccess {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.02); box-shadow: 0 0 10px rgba(16, 185, 129, 0.5); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      10%, 30%, 50%, 70%, 90% { transform: translateX(-3px); }
+      20%, 40%, 60%, 80% { transform: translateX(3px); }
+    }
+
+    @keyframes ripple {
+      0% {
+        transform: scale(0, 0);
+        opacity: 0.5;
+      }
+      100% {
+        transform: scale(20, 20);
+        opacity: 0;
+      }
+    }
+
+    @keyframes progressShimmer {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+
+    @keyframes cardEnter {
+      from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.98);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @keyframes cardExit {
+      from {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+      to {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.98);
+      }
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 1rem;
+      }
+      
+      .card {
+        padding: 1.5rem;
+      }
+      
+      h1 {
+        font-size: 1.75rem;
+      }
+      
+      .question {
+        font-size: 1.1rem;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .settings-row {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+
+    @media (display-mode: standalone) {
+      body {
+        padding-top: env(safe-area-inset-top);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>SAT Proctor</h1>
+    <div class="offline-notice" id="offlineNotice">You are currently offline. Using cached questions.</div>
+
+    <div class="card entering" id="startScreen">
+      <h2>Practice Test Configuration</h2>
+      <div class="settings-row">
+        <div class="settings-group">
+          <label class="settings-label" for="questionCount">Test Length</label>
+          <select id="questionCount">
+            <option value="10">10 Questions (~12 min)</option>
+            <option value="20">20 Questions (~25 min)</option>
+            <option value="30">30 Questions (~35 min)</option>
+            <option value="50">50 Questions (~60 min)</option>
+          </select>
+        </div>
+        <div class="settings-group">
+          <label class="settings-label" for="questionCategory">Category Focus</label>
+          <select id="questionCategory">
+            <option value="all">All Categories</option>
+            <option value="math">Math</option>
+            <option value="reading">Reading</option>
+            <option value="writing">Writing</option>
+          </select>
+        </div>
+      </div>
+      <div class="settings-row">
+        <div class="settings-group">
+          <label class="settings-label" for="timerMode">Timer Mode</label>
+          <select id="timerMode">
+            <option value="standard">Standard Timing</option>
+            <option value="untimed">Untimed Practice</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn-primary" onclick="startQuiz()">
+        <span id="startButtonText">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          Begin Test
+        </span>
+      </button>
+      <div id="cachedStatus" style="margin-top: 1rem; font-size: 0.875rem; color: var(--gray-medium); text-align: center;"></div>
+    </div>
+
+    <div class="card hidden" id="quizScreen">
+      <div class="progress-container">
+        <span id="progressText">Question 1 of 10</span>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="timer" id="timerDisplay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <span id="timerText">12:00</span>
+        </div>
+      </div>
+      <div id="categoryTag" class="category-tag math-tag hidden">Math</div>
+      <div class="question" id="question"></div>
+      <div class="options" id="options"></div>
+      <div class="explanation hidden" id="explanation"></div>
+      <button class="btn-primary next-btn hidden" onclick="nextQuestion()">Continue</button>
+    </div>
+
+    <div class="card hidden" id="resultScreen">
+      <h2>Test Results</h2>
+      <div class="score-display">
+        Your Score:
+        <span class="score-value" id="scoreDisplay">0</span>
+        <span id="scoreRatio"></span>
+      </div>
+      
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-value" id="correctCount">0</div>
+          <div class="stat-label">Correct Answers</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="incorrectCount">0</div>
+          <div class="stat-label">Incorrect Answers</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="accuracyRate">0%</div>
+          <div class="stat-label">Accuracy</div>
+        </div>
+      </div>
+      
+      <h3>Performance by Category</h3>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-value" id="mathScore">-</div>
+          <div class="stat-label">Math</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="readingScore">-</div>
+          <div class="stat-label">Reading</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="writingScore">-</div>
+          <div class="stat-label">Writing</div>
+        </div>
+      </div>
+      
+      <button class="btn-primary" onclick="location.reload()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M1 4v6h6"></path>
+          <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+        </svg>
+        Start New Test
+      </button>
+      <button class="btn-outline" style="margin-top: 1rem;" onclick="reviewTest()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+        </svg>
+        Review Answers
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // Service Worker Registration
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').then(registration => {
+          console.log('ServiceWorker registration successful');
+          updateCachedStatus();
+        }).catch(err => {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
+
+    // Check online status
+    window.addEventListener('online', updateOnlineStatus);
+    window.addEventListener('offline', updateOnlineStatus);
+
+    function updateOnlineStatus() {
+      const offlineNotice = document.getElementById('offlineNotice');
+      if (navigator.onLine) {
+        offlineNotice.style.display = 'none';
+      } else {
+        offlineNotice.style.display = 'block';
+      }
+    }
+
+    // Update cached status display
+    function updateCachedStatus() {
+      if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
+        navigator.serviceWorker.controller.postMessage({action: 'checkCache'});
+      }
+    }
+
+    // Listen for messages from service worker
+    navigator.serviceWorker?.addEventListener('message', event => {
+      if (event.data.cacheStatus) {
+        document.getElementById('cachedStatus').textContent = 
+          event.data.cacheStatus === 'cached' 
+            ? "Questions are cached for offline use" 
+            : "New questions will be downloaded";
+      }
+    });
+
+    let allQuestions = [], selectedQuestions = [], currentIndex = 0, score = 0;
+    let timerInterval, timeRemaining;
+    let categoryStats = { math: { correct: 0, total: 0 }, reading: { correct: 0, total: 0 }, writing: { correct: 0, total: 0 } };
+    let userAnswers = [];
+
+    async function startQuiz() {
+      const count = parseInt(document.getElementById('questionCount').value);
+      const category = document.getElementById('questionCategory').value;
+      const timerMode = document.getElementById('timerMode').value;
+      
+      try {
+        // Show loading state
+        const startButton = document.querySelector('#startScreen .btn-primary');
+        startButton.disabled = true;
+        document.getElementById('startButtonText').innerHTML = `
+          <div class="loading-spinner"></div>
+          Loading Questions...
+        `;
+        
+        // Animate card exit
+        const startScreen = document.getElementById('startScreen');
+        startScreen.classList.remove('entering');
+        startScreen.classList.add('exiting');
+        
+        // Wait for animation to complete
+        await new Promise(resolve => setTimeout(resolve, 300));
+        
+        let questions = await tryFetchQuestions();
+        
+        if (!questions || questions.length === 0) {
+          throw new Error("No questions available. Please check your internet connection.");
+        }
+
+        // Filter by category if needed
+        if (category !== 'all') {
+          questions = questions.filter(q => q.category && q.category.toLowerCase() === category);
+        }
+        
+        if (questions.length < count) {
+          throw new Error(`Not enough questions available in this category. Only ${questions.length} found.`);
+        }
+        
+        selectedQuestions = shuffleArray(questions).slice(0, count);
+        startScreen.classList.add('hidden');
+        
+        // Show quiz screen with animation
+        const quizScreen = document.getElementById('quizScreen');
+        quizScreen.classList.remove('hidden');
+        quizScreen.classList.add('entering');
+        
+        // Initialize quiz state
+        score = 0;
+        currentIndex = 0;
+        userAnswers = [];
+        categoryStats = { math: { correct: 0, total: 0 }, reading: { correct: 0, total: 0 }, writing: { correct: 0, total: 0 } };
+        
+        // Setup timer based on mode
+        setupTimer(timerMode, count);
+        updateProgress();
+        showQuestion();
+      } catch (error) {
+        alert(error.message || "Failed to load questions. Please check your internet connection and try again.");
+        console.error(error);
+        // Reset button state
+        const startButton = document.querySelector('#startScreen .btn-primary');
+        startButton.disabled = false;
+        document.getElementById('startButtonText').innerHTML = `
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          Begin Test
+        `;
+        document.getElementById('startScreen').classList.remove('exiting');
+        document.getElementById('startScreen').classList.add('entering');
+      }
+    }
+
+    async function tryFetchQuestions() {
+      // First try to fetch from network
+      try {
+        if (navigator.onLine) {
+          const res = await fetch('https://raw.githubusercontent.com/mankimalki/SATs-Quiz/main/sats_quiz_100_questions.json');
+          const questions = await res.json();
+          
+          // Cache the questions
+          if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
+            navigator.serviceWorker.controller.postMessage({
+              action: 'cacheQuestions',
+              questions: questions
+            });
+          }
+          
+          return questions;
+        }
+      } catch (e) {
+        console.log("Network fetch failed, trying cache");
+      }
+      
+      // If network fails, try to get from cache via service worker
+      return new Promise((resolve) => {
+        if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
+          const channel = new MessageChannel();
+          channel.port1.onmessage = (event) => {
+            if (event.data.questions) {
+              resolve(event.data.questions);
+            } else {
+              resolve([]);
+            }
+          };
+          navigator.serviceWorker.controller.postMessage({
+            action: 'getCachedQuestions'
+          }, [channel.port2]);
+        } else {
+          resolve([]);
+        }
+      });
+    }
+
+    function setupTimer(mode, questionCount) {
+      // Clear any existing timer
+      if (timerInterval) clearInterval(timerInterval);
+      
+      // Calculate time based on question count
+      let totalSeconds;
+      if (questionCount <= 10) {
+        totalSeconds = 12 * 60; // 12 minutes for 10 questions
+      } else if (questionCount <= 20) {
+        totalSeconds = 25 * 60; // 25 minutes for 20 questions
+      } else if (questionCount <= 30) {
+        totalSeconds = 35 * 60; // 35 minutes for 30 questions
+      } else {
+        totalSeconds = Math.floor(questionCount * 1.2 * 60); // 1.2 min per question for larger tests
+      }
+      
+      if (mode === 'untimed') {
+        // Untimed mode
+        document.getElementById('timerDisplay').classList.add('hidden');
+        return;
+      }
+      
+      timeRemaining = totalSeconds;
+      updateTimerDisplay();
+      document.getElementById('timerDisplay').classList.remove('hidden');
+      document.getElementById('timerDisplay').style.color = 'var(--gray-dark)';
+      
+      // Start countdown
+      timerInterval = setInterval(() => {
+        timeRemaining--;
+        updateTimerDisplay();
+        
+        if (timeRemaining <= 0) {
+          clearInterval(timerInterval);
+          if (currentIndex < selectedQuestions.length - 1) {
+            alert("Time's up! Your test will now be submitted.");
+            showResult();
+          }
+        }
+      }, 1000);
+    }
+
+    function updateTimerDisplay() {
+      const minutes = Math.floor(timeRemaining / 60);
+      const seconds = timeRemaining % 60;
+      document.getElementById('timerText').textContent = 
+        `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        
+      // Change color when time is running low
+      if (timeRemaining < 60) {
+        document.getElementById('timerDisplay').classList.add('warning');
+      }
+    }
+
+    async function typeText(element, text) {
+      element.classList.add('typing');
+      let i = 0;
+      return new Promise(resolve => {
+        const typingInterval = setInterval(() => {
+          if (i < text.length) {
+            element.textContent = text.substring(0, i + 1);
+            i++;
+          } else {
+            clearInterval(typingInterval);
+            element.classList.remove('typing');
+            resolve();
+          }
+        }, 20); // Adjust typing speed here
+      });
+    }
+
+    async function showQuestion() {
+      const q = selectedQuestions[currentIndex];
+      const questionElement = document.getElementById('question');
+      
+      // Clear previous content and show typing animation
+      questionElement.textContent = '';
+      questionElement.classList.add('typing');
+      await typeText(questionElement, q.question);
+      
+      // Show category tag if available
+      const categoryTag = document.getElementById('categoryTag');
+      if (q.category) {
+        categoryTag.textContent = q.category;
+        categoryTag.className = 'category-tag ' + q.category.toLowerCase() + '-tag';
+        categoryTag.classList.remove('hidden');
+      } else {
+        categoryTag.classList.add('hidden');
+      }
+      
+      const optionsDiv = document.getElementById('options');
+      const explanationDiv = document.getElementById('explanation');
+      explanationDiv.classList.add('hidden');
+      document.querySelector('.next-btn').classList.add('hidden');
+      optionsDiv.innerHTML = '';
+
+      // Show options with typing effect
+      const optionKeys = Object.keys(q.options);
+      for (let i = 0; i < optionKeys.length; i++) {
+        const key = optionKeys[i];
+        const btn = document.createElement('button');
+        btn.textContent = '';
+        btn.dataset.key = key;
+        btn.onclick = () => handleAnswerSelection(btn, key, q);
+        optionsDiv.appendChild(btn);
+        
+        // Type out each option
+        await typeText(btn, `${key.toUpperCase()}. ${q.options[key]}`);
+      }
+    }
+
+    function handleAnswerSelection(button, selectedKey, question) {
+      const optionsDiv = document.getElementById('options');
+      Array.from(optionsDiv.children).forEach(b => b.disabled = true);
+
+      // Record user answer
+      userAnswers.push({
+        question: question.question,
+        userAnswer: selectedKey,
+        correctAnswer: question.correct_answer,
+        explanation: question.explanation,
+        category: question.category || 'unknown'
+      });
+
+      // Check if answer is correct
+      const isCorrect = selectedKey === question.correct_answer;
+      
+      // Update score and category stats
+      if (isCorrect) {
+        score++;
+        if (question.category) {
+          const cat = question.category.toLowerCase();
+          categoryStats[cat].correct++;
+          categoryStats[cat].total++;
+        }
+      } else if (question.category) {
+        const cat = question.category.toLowerCase();
+        categoryStats[cat].total++;
+      }
+
+      // Visual feedback
+      if (isCorrect) {
+        button.classList.add('correct');
+      } else {
+        button.classList.add('wrong');
+        const correctBtn = Array.from(optionsDiv.children).find(b => b.dataset.key === question.correct_answer);
+        if (correctBtn) correctBtn.classList.add('correct');
+      }
+      // Show explanation if available
+      const explanationDiv = document.getElementById('explanation');
+      if (question.explanation) {
+        explanationDiv.textContent = question.explanation;
+        explanationDiv.className = isCorrect ? 'explanation correct-explanation' : 'explanation incorrect-explanation';
+        explanationDiv.classList.remove('hidden');
+      }
+      
+      // Show next button
+      document.querySelector('.next-btn').classList.remove('hidden');
+    }
+
+    function nextQuestion() {
+      currentIndex++;
+      updateProgress();
+      
+      if (currentIndex < selectedQuestions.length) {
+        // Animate card transition
+        const quizScreen = document.getElementById('quizScreen');
+        quizScreen.classList.remove('entering');
+        quizScreen.classList.add('exiting');
+        
+        setTimeout(() => {
+          quizScreen.classList.remove('exiting');
+          quizScreen.classList.add('entering');
+          showQuestion();
+        }, 300);
+      } else {
+        showResult();
+      }
+    }
+
+    function updateProgress() {
+      const progressText = document.getElementById('progressText');
+      const progressFill = document.getElementById('progressFill');
+      const progress = ((currentIndex) / selectedQuestions.length) * 100;
+      
+      progressText.textContent = `Question ${currentIndex + 1} of ${selectedQuestions.length}`;
+      progressFill.style.width = `${progress}%`;
+    }
+
+    function showResult() {
+      // Clear timer if running
+      if (timerInterval) clearInterval(timerInterval);
+      
+      // Hide quiz screen with animation
+      const quizScreen = document.getElementById('quizScreen');
+      quizScreen.classList.remove('entering');
+      quizScreen.classList.add('exiting');
+      
+      setTimeout(() => {
+        quizScreen.classList.add('hidden');
+        
+        // Show result screen with animation
+        const resultScreen = document.getElementById('resultScreen');
+        resultScreen.classList.remove('hidden');
+        resultScreen.classList.add('entering');
+        
+        // Calculate and display results
+        const accuracy = Math.round((score / selectedQuestions.length) * 100);
+        
+        document.getElementById('scoreDisplay').textContent = score;
+        document.getElementById('scoreRatio').textContent = `out of ${selectedQuestions.length}`;
+        document.getElementById('correctCount').textContent = score;
+        document.getElementById('incorrectCount').textContent = selectedQuestions.length - score;
+        document.getElementById('accuracyRate').textContent = `${accuracy}%`;
+        
+        // Display category stats
+        if (categoryStats.math.total > 0) {
+          const mathAccuracy = Math.round((categoryStats.math.correct / categoryStats.math.total) * 100);
+          document.getElementById('mathScore').textContent = `${mathAccuracy}%`;
+        }
+        
+        if (categoryStats.reading.total > 0) {
+          const readingAccuracy = Math.round((categoryStats.reading.correct / categoryStats.reading.total) * 100);
+          document.getElementById('readingScore').textContent = `${readingAccuracy}%`;
+        }
+        
+        if (categoryStats.writing.total > 0) {
+          const writingAccuracy = Math.round((categoryStats.writing.correct / categoryStats.writing.total) * 100);
+          document.getElementById('writingScore').textContent = `${writingAccuracy}%`;
+        }
+      }, 300);
+    }
+
+    function reviewTest() {
+      // Store the questions and answers for review
+      localStorage.setItem('reviewQuestions', JSON.stringify(selectedQuestions));
+      localStorage.setItem('userAnswers', JSON.stringify(userAnswers));
+      
+      // Open review page (would need to be implemented)
+      alert('Review feature would open in a complete implementation');
+      // window.location.href = 'review.html';
+    }
+
+    // Utility function to shuffle array
+    function shuffleArray(array) {
+      const newArray = [...array];
+      for (let i = newArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+      }
+      return newArray;
+    }
+
+    // Initialize the app
+    document.addEventListener('DOMContentLoaded', () => {
+      updateOnlineStatus();
+      
+      // Check if we have cached questions
+      if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
+        updateCachedStatus();
+      }
+    });
+  </script>
+</body>
+</html>

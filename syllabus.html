@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Syllabus Finder | EduResources</title>
+    <meta name="description" content="Find complete syllabus for UK qualifications including KS1, KS2, KS3, GCSE, IGCSE and A-Levels from all major exam boards.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --light-gray: #f5f5f5;
+            --medium-gray: #e0e0e0;
+            --dark-gray: #7f8c8d;
+            --white: #ffffff;
+            --border-radius: 8px;
+            --card-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            --transition: all 0.2s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-gray);
+            color: var(--primary-color);
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        header {
+            background-color: var(--white);
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo i {
+            color: var(--secondary-color);
+            margin-right: 10px;
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            padding: 40px 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .page-header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .syllabus-filters {
+            background-color: var(--white);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--card-shadow);
+            margin-bottom: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .filter-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .filter-group select,
+        .filter-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--medium-gray);
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+        }
+
+        .filter-btn {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            border: none;
+            padding: 10px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            cursor: pointer;
+            grid-column: 1 / -1;
+        }
+
+        .syllabus-results {
+            margin-bottom: 40px;
+        }
+
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .syllabus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .syllabus-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+        }
+
+        .syllabus-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .key-stage {
+            background-color: var(--secondary-color);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .exam-board {
+            display: inline-block;
+            background-color: var(--light-gray);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        .card-footer {
+            padding: 0 15px 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn-outline {
+            border: 1px solid var(--secondary-color);
+            color: var(--secondary-color);
+            background: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .download-link {
+            color: var(--secondary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .no-results {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 40px;
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+        }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--white);
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: var(--dark-gray);
+            font-size: 0.8rem;
+        }
+
+        .nav-item i {
+            font-size: 1.2rem;
+            margin-bottom: 3px;
+        }
+
+        .nav-item.active {
+            color: var(--secondary-color);
+        }
+
+        @media (max-width: 768px) {
+            .syllabus-filters {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-book-open"></i>
+                EduResources
+            </a>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>UK Syllabus Finder</h1>
+            <p>Find complete syllabus for all UK qualifications and exam boards</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="syllabus-filters">
+            <div class="filter-group">
+                <label for="keyStage">Key Stage</label>
+                <select id="keyStage">
+                    <option value="">All Key Stages</option>
+                    <option value="KS1">KS1 (Years 1-2)</option>
+                    <option value="KS2">KS2 (Years 3-6)</option>
+                    <option value="KS3">KS3 (Years 7-9)</option>
+                    <option value="KS4">KS4 (GCSE)</option>
+                    <option value="KS5">KS5 (A-Level)</option>
+                    <option value="11 Plus">11 Plus (Entry)</option>
+                    <option value="SATs">SATs (Year-6)</option>
+                </select>
+            </div>
+<div class="filter-group">
+    <label for="subject">Subject</label>
+    <select id="subject">
+        <option value="">All Subjects</option>
+        
+        <!-- Core Subjects -->
+        <optgroup label="Core Subjects">
+            <option value="Mathematics">Mathematics</option>
+            <option value="English">English</option>
+            <option value="English Literature">English Literature</option>
+            <option value="Science">Science (Combined)</option>
+            <option value="Biology">Biology</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="Physics">Physics</option>
+        </optgroup>
+        
+        <!-- Humanities -->
+        <optgroup label="Humanities">
+            <option value="History">History</option>
+            <option value="Geography">Geography</option>
+            <option value="Religious Studies">Religious Studies</option>
+            <option value="Philosophy">Philosophy</option>
+            <option value="Psychology">Psychology</option>
+            <option value="Sociology">Sociology</option>
+        </optgroup>
+        
+        <!-- Languages -->
+        <optgroup label="Languages">
+            <option value="French">French</option>
+            <option value="Spanish">Spanish</option>
+            <option value="German">German</option>
+            <option value="Mandarin">Mandarin</option>
+            <option value="Latin">Latin</option>
+            <option value="Classical Greek">Classical Greek</option>
+            <option value="Arabic">Arabic</option>
+        </optgroup>
+        
+        <!-- Arts -->
+        <optgroup label="Arts & Creative">
+            <option value="Art and Design">Art and Design</option>
+            <option value="Music">Music</option>
+            <option value="Drama">Drama</option>
+            <option value="Dance">Dance</option>
+            <option value="Media Studies">Media Studies</option>
+            <option value="Film Studies">Film Studies</option>
+            <option value="Photography">Photography</option>
+        </optgroup>
+        
+        <!-- Technology -->
+        <optgroup label="Technology & Computing">
+            <option value="Computer Science">Computer Science</option>
+            <option value="Design and Technology">Design and Technology</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Food Technology">Food Technology</option>
+            <option value="Textiles">Textiles</option>
+        </optgroup>
+        
+        <!-- Business & Social Sciences -->
+        <optgroup label="Business & Social Sciences">
+            <option value="Business Studies">Business Studies</option>
+            <option value="Economics">Economics</option>
+            <option value="Accounting">Accounting</option>
+            <option value="Law">Law</option>
+            <option value="Politics">Politics</option>
+        </optgroup>
+        
+        <!-- Vocational -->
+        <optgroup label="Vocational & Other">
+            <option value="Physical Education">Physical Education</option>
+            <option value="Health and Social Care">Health and Social Care</option>
+            <option value="Travel and Tourism">Travel and Tourism</option>
+            <option value="Applied Science">Applied Science</option>
+            <option value="Statistics">Statistics</option>
+            <option value="Further Mathematics">Further Mathematics</option>
+        </optgroup>
+        
+        <!-- 11 Plus Specific -->
+        <optgroup label="11 Plus Subjects">
+            <option value="Verbal Reasoning">Verbal Reasoning</option>
+            <option value="Non-Verbal Reasoning">Non-Verbal Reasoning</option>
+            <option value="Maths (11 Plus)">Mathematics (11 Plus)</option>
+            <option value="English (11 Plus)">English (11 Plus)</option>
+        </optgroup>
+        
+        <!-- SATs Specific -->
+        <optgroup label="SATs Subjects">
+            <option value="Maths (KS1 SATs)">Mathematics (KS1 SATs)</option>
+            <option value="English (KS1 SATs)">English (KS1 SATs)</option>
+            <option value="Maths (KS2 SATs)">Mathematics (KS2 SATs)</option>
+            <option value="English (KS2 SATs)">English (KS2 SATs)</option>
+            <option value="Science (KS2 SATs)">Science (KS2 SATs)</option>
+        </optgroup>
+    </select>
+</div>
+
+            <div class="filter-group">
+                <label for="examBoard">Exam Board</label>
+                <select id="examBoard">
+                    <option value="">All Exam Boards</option>
+                    <option value="AQA">AQA</option>
+                    <option value="Edexcel">Edexcel</option>
+                    <option value="OCR">OCR</option>
+                    <option value="WJEC">WJEC</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="search">Search</label>
+                <input type="text" id="search" placeholder="Search syllabus...">
+            </div>
+
+            <button class="filter-btn" id="applyFilters">
+                <i class="fas fa-filter"></i> Apply Filters
+            </button>
+        </section>
+
+        <section class="syllabus-results">
+            <div class="results-header">
+                <h2>Syllabus Documents</h2>
+                <div class="results-count" id="resultsCount">Loading syllabus...</div>
+            </div>
+
+            <div class="syllabus-grid" id="syllabusGrid">
+                <!-- Cards will be loaded here -->
+            </div>
+        </section>
+    </div>
+
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="pastpapers.html" class="nav-item">
+            <i class="fas fa-file-alt"></i>
+            <span>Papers</span>
+        </a>
+        <a href="syllabus.html" class="nav-item active">
+            <i class="fas fa-list-alt"></i>
+            <span>Syllabus</span>
+        </a>
+        <a href="resources.html" class="nav-item">
+            <i class="fas fa-book"></i>
+            <span>Resources</span>
+        </a>
+    </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const syllabusGrid = document.getElementById('syllabusGrid');
+            const resultsCount = document.getElementById('resultsCount');
+            let syllabusData = [];
+
+            // Load syllabus data
+            fetch('syllabus-data.json')
+                .then(response => response.json())
+                .then(data => {
+                    syllabusData = data.syllabus;
+                    renderSyllabus(syllabusData);
+                    setupFilters();
+                })
+                .catch(error => {
+                    console.error('Error loading syllabus:', error);
+                    showError();
+                });
+
+            function renderSyllabus(data) {
+                syllabusGrid.innerHTML = '';
+                
+                if (data.length === 0) {
+                    showNoResults();
+                    return;
+                }
+
+                data.forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = 'syllabus-card';
+                    card.setAttribute('data-keystage', item.keyStage);
+                    card.setAttribute('data-subject', item.subject);
+                    card.setAttribute('data-examboard', item.examBoard);
+
+                    card.innerHTML = `
+                        <div class="card-header">
+                            <h3>${item.title}</h3>
+                            <span class="key-stage">${getKeyStageLabel(item.keyStage)}</span>
+                        </div>
+                        <div class="card-body">
+                            <p>${item.description}</p>
+                            <div>
+                                <span class="exam-board">${item.examBoard}</span>
+                                ${item.code ? `<span class="exam-board">${item.code}</span>` : ''}
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="${item.detailUrl}" class="btn-outline">
+                                <i class="fas fa-eye"></i> View
+                            </a>
+                            <a href="${item.pdfUrl}" class="download-link">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    `;
+
+                    syllabusGrid.appendChild(card);
+                });
+
+                resultsCount.textContent = `Showing ${data.length} ${data.length === 1 ? 'result' : 'results'}`;
+            }
+
+            function setupFilters() {
+                document.getElementById('applyFilters').addEventListener('click', applyFilters);
+                document.getElementById('search').addEventListener('keyup', function(e) {
+                    if (e.key === 'Enter') applyFilters();
+                });
+            }
+
+            function applyFilters() {
+                const keyStage = document.getElementById('keyStage').value;
+                const subject = document.getElementById('subject').value;
+                const examBoard = document.getElementById('examBoard').value;
+                const searchTerm = document.getElementById('search').value.toLowerCase();
+
+                const filteredData = syllabusData.filter(item => {
+                    const matchesKeyStage = !keyStage || item.keyStage === keyStage;
+                    const matchesSubject = !subject || item.subject === subject;
+                    const matchesExamBoard = !examBoard || item.examBoard === examBoard;
+                    const matchesSearch = !searchTerm || 
+                                         item.title.toLowerCase().includes(searchTerm) || 
+                                         item.description.toLowerCase().includes(searchTerm);
+
+                    return matchesKeyStage && matchesSubject && matchesExamBoard && matchesSearch;
+                });
+
+                renderSyllabus(filteredData);
+            }
+
+            function getKeyStageLabel(keyStage) {
+                const labels = {
+                    'KS1': 'KS1',
+                    'KS2': 'KS2',
+                    'KS3': 'KS3',
+                    'KS4': 'GCSE',
+                    'KS5': 'A-Level'
+                };
+                return labels[keyStage] || keyStage;
+            }
+
+            function showNoResults() {
+                syllabusGrid.innerHTML = `
+                    <div class="no-results">
+                        <i class="fas fa-search"></i>
+                        <h3>No results found</h3>
+                        <p>Try adjusting your search filters</p>
+                        <button onclick="resetFilters()" class="btn-outline">
+                            <i class="fas fa-redo"></i> Reset Filters
+                        </button>
+                    </div>
+                `;
+                resultsCount.textContent = '0 results';
+            }
+
+            function showError() {
+                syllabusGrid.innerHTML = `
+                    <div class="no-results">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h3>Error loading syllabus</h3>
+                        <p>Please try again later</p>
+                    </div>
+                `;
+                resultsCount.textContent = 'Error';
+            }
+
+            function resetFilters() {
+                document.getElementById('keyStage').value = '';
+                document.getElementById('subject').value = '';
+                document.getElementById('examBoard').value = '';
+                document.getElementById('search').value = '';
+                renderSyllabus(syllabusData);
+            }
+
+            // Make resetFilters available globally
+            window.resetFilters = resetFilters;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+{
+  "papers": [
+    {
+      "title": "AQA GCSE Mathematics Paper 1 (Foundation)",
+      "description": "Non-calculator paper with mark scheme (Foundation Tier)",
+      "qualification": "GCSE",
+      "subject": "Mathematics",
+      "examBoard": "AQA",
+      "year": "2023",
+      "code": "8300/1F",
+      "pdfUrl": "/papers/aqa/maths/2023/paper1f.pdf",
+      "detailUrl": "/papers/aqa/maths/2023/paper1f",
+      "markSchemeUrl": "/papers/aqa/maths/2023/paper1f-mark-scheme.pdf"
+    },
+    {
+      "title": "AQA GCSE Mathematics Paper 2 (Higher)",
+      "description": "Calculator paper with mark scheme (Higher Tier)",
+      "qualification": "GCSE",
+      "subject": "Mathematics",
+      "examBoard": "AQA",
+      "year": "2023",
+      "code": "8300/2H",
+      "pdfUrl": "/papers/aqa/maths/2023/paper2h.pdf",
+      "detailUrl": "/papers/aqa/maths/2023/paper2h",
+      "markSchemeUrl": "/papers/aqa/maths/2023/paper2h-mark-scheme.pdf"
+    },
+    {
+      "title": "Edexcel A-Level Biology Paper 1",
+      "description": "Advanced biology paper covering topics 1-4",
+      "qualification": "A-Level",
+      "subject": "Biology",
+      "examBoard": "Edexcel",
+      "year": "2022",
+      "code": "9BN0/01",
+      "pdfUrl": "/papers/edexcel/biology/2022/paper1.pdf",
+      "detailUrl": "/papers/edexcel/biology/2022/paper1",
+      "markSchemeUrl": "/papers/edexcel/biology/2022/paper1-mark-scheme.pdf"
+    },
+    {
+      "title": "OCR GCSE Chemistry Paper 3 (Higher)",
+      "description": "Higher tier chemistry paper with mark scheme",
+      "qualification": "GCSE",
+      "subject": "Chemistry",
+      "examBoard": "OCR",
+      "year": "2023",
+      "code": "J248/03",
+      "pdfUrl": "/papers/ocr/chemistry/2023/paper3.pdf",
+      "detailUrl": "/papers/ocr/chemistry/2023/paper3",
+      "markSchemeUrl": "/papers/ocr/chemistry/2023/paper3-mark-scheme.pdf"
+    },
+    {
+      "title": "SATs Mathematics Paper 1 (Arithmetic)",
+      "description": "Key Stage 2 SATs mathematics arithmetic paper",
+      "qualification": "SATs",
+      "subject": "Mathematics",
+      "examBoard": "National",
+      "year": "2023",
+      "pdfUrl": "/papers/sats/maths/2023/paper1.pdf",
+      "detailUrl": "/papers/sats/maths/2023/paper1",
+      "markSchemeUrl": "/papers/sats/maths/2023/paper1-mark-scheme.pdf"
+    },
+    {
+      "title": "11 Plus Verbal Reasoning Paper 1",
+      "description": "CEM-style verbal reasoning practice paper with answers",
+      "qualification": "11Plus",
+      "subject": "Verbal Reasoning",
+      "examBoard": "CEM",
+      "year": "2023",
+      "pdfUrl": "/papers/11plus/verbal/2023/paper1.pdf",
+      "detailUrl": "/papers/11plus/verbal/2023/paper1",
+      "markSchemeUrl": "/papers/11plus/verbal/2023/paper1-answers.pdf"
+    },
+    {
+      "title": "WJEC GCSE English Language Unit 1",
+      "description": "Reading and Writing examination paper",
+      "qualification": "GCSE",
+      "subject": "English Language",
+      "examBoard": "WJEC",
+      "year": "2023",
+      "code": "3700U10-1",
+      "pdfUrl": "/papers/wjec/english/2023/unit1.pdf",
+      "detailUrl": "/papers/wjec/english/2023/unit1",
+      "markSchemeUrl": "/papers/wjec/english/2023/unit1-mark-scheme.pdf"
+    },
+    {
+      "title": "AQA A-Level Physics Paper 2",
+      "description": "Sections 6.1-6.5 and 7.1-7.3 with mark scheme",
+      "qualification": "A-Level",
+      "subject": "Physics",
+      "examBoard": "AQA",
+      "year": "2022",
+      "code": "7408/2",
+      "pdfUrl": "/papers/aqa/physics/2022/paper2.pdf",
+      "detailUrl": "/papers/aqa/physics/2022/paper2",
+      "markSchemeUrl": "/papers/aqa/physics/2022/paper2-mark-scheme.pdf"
+    },
+    {
+      "title": "Edexcel IGCSE Biology Paper 1B",
+      "description": "Double award biology paper with mark scheme",
+      "qualification": "IGCSE",
+      "subject": "Biology",
+      "examBoard": "Edexcel",
+      "year": "2023",
+      "code": "4BI1/1B",
+      "pdfUrl": "/papers/edexcel/igcse-biology/2023/paper1b.pdf",
+      "detailUrl": "/papers/edexcel/igcse-biology/2023/paper1b",
+      "markSchemeUrl": "/papers/edexcel/igcse-biology/2023/paper1b-mark-scheme.pdf"
+    },
+    {
+      "title": "SATs English Reading Paper",
+      "description": "Key Stage 2 SATs English reading booklet and answer booklet",
+      "qualification": "SATs",
+      "subject": "English",
+      "examBoard": "National",
+      "year": "2023",
+      "pdfUrl": "/papers/sats/english/2023/reading.pdf",
+      "detailUrl": "/papers/sats/english/2023/reading",
+      "markSchemeUrl": "/papers/sats/english/2023/reading-mark-scheme.pdf"
+    },
+    {
+      "title": "11 Plus Non-Verbal Reasoning Paper 2",
+      "description": "GL-style non-verbal reasoning practice paper with answers",
+      "qualification": "11Plus",
+      "subject": "Non-Verbal Reasoning",
+      "examBoard": "GL",
+      "year": "2023",
+      "pdfUrl": "/papers/11plus/non-verbal/2023/paper2.pdf",
+      "detailUrl": "/papers/11plus/non-verbal/2023/paper2",
+      "markSchemeUrl": "/papers/11plus/non-verbal/2023/paper2-answers.pdf"
+    },
+    {
+      "title": "OCR A-Level Chemistry Paper 3",
+      "description": "Unified chemistry paper with mark scheme",
+      "qualification": "A-Level",
+      "subject": "Chemistry",
+      "examBoard": "OCR",
+      "year": "2022",
+      "code": "H432/03",
+      "pdfUrl": "/papers/ocr/chemistry/2022/paper3.pdf",
+      "detailUrl": "/papers/ocr/chemistry/2022/paper3",
+      "markSchemeUrl": "/papers/ocr/chemistry/2022/paper3-mark-scheme.pdf"
+    },
+    {
+      "title": "Cambridge IGCSE Physics Paper 4",
+      "description": "Extended theory paper with mark scheme",
+      "qualification": "IGCSE",
+      "subject": "Physics",
+      "examBoard": "CIE",
+      "year": "2023",
+      "code": "0625/42",
+      "pdfUrl": "/papers/cie/physics/2023/paper4.pdf",
+      "detailUrl": "/papers/cie/physics/2023/paper4",
+      "markSchemeUrl": "/papers/cie/physics/2023/paper4-mark-scheme.pdf"
+    },
+    {
+      "title": "AQA GCSE History Paper 1 (Section A)",
+      "description": "Understanding the modern world: America 1920-1973",
+      "qualification": "GCSE",
+      "subject": "History",
+      "examBoard": "AQA",
+      "year": "2023",
+      "code": "8145/1A",
+      "pdfUrl": "/papers/aqa/history/2023/paper1a.pdf",
+      "detailUrl": "/papers/aqa/history/2023/paper1a",
+      "markSchemeUrl": "/papers/aqa/history/2023/paper1a-mark-scheme.pdf"
+    },
+    {
+      "title": "Edexcel GCSE Geography Paper 2",
+      "description": "UK geographical issues with mark scheme",
+      "qualification": "GCSE",
+      "subject": "Geography",
+      "examBoard": "Edexcel",
+      "year": "2023",
+      "code": "1GA0/02",
+      "pdfUrl": "/papers/edexcel/geography/2023/paper2.pdf",
+      "detailUrl": "/papers/edexcel/geography/2023/paper2",
+      "markSchemeUrl": "/papers/edexcel/geography/2023/paper2-mark-scheme.pdf"
+    }
+  ]
+}

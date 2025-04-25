@@ -7,8 +7,7 @@
       "subject": "Maths",
       "examBoard": "National",
       "code": "",
-      "imageUrl": "https://mankimalki.github.io/SATs-Quiz/book1.jpg",
-      "pdfUrl": "https://mankimalki.github.io/SATs-Quiz/book1.pdf",
+      "pdfUrl": "/syllabus/maths-ks1.pdf",
       "detailUrl": "/syllabus/maths-ks1"
     },
     {
@@ -18,8 +17,7 @@
       "subject": "Science",
       "examBoard": "National",
       "code": "",
-      "imageUrl": "https://mankimalki.github.io/SATs-Quiz/book2.jpg",
-      "pdfUrl": "https://mankimalki.github.io/SATs-Quiz/book2.pdf",
+      "pdfUrl": "/syllabus/science-ks2.pdf",
       "detailUrl": "/syllabus/science-ks2"
     },
     {
@@ -29,8 +27,7 @@
       "subject": "Maths",
       "examBoard": "National",
       "code": "",
-      "imageUrl": "https://mankimalki.github.io/SATs-Quiz/book3.jpg",
-      "pdfUrl": "https://mankimalki.github.io/SATs-Quiz/book3.pdf",
+      "pdfUrl": "/syllabus/maths-ks3.pdf",
       "detailUrl": "/syllabus/maths-ks3"
     },
     {
@@ -40,8 +37,7 @@
       "subject": "Biology",
       "examBoard": "AQA",
       "code": "8461",
-      "imageUrl": "https://mankimalki.github.io/SATs-Quiz/book4.jpg",
-      "pdfUrl": "https://mankimalki.github.io/SATs-Quiz/book4.pdf",
+      "pdfUrl": "/syllabus/biology-gcse-aqa.pdf",
       "detailUrl": "/syllabus/biology-gcse-aqa"
     },
     {
@@ -51,8 +47,7 @@
       "subject": "Chemistry",
       "examBoard": "Edexcel",
       "code": "1CH0",
-      "imageUrl": "https://mankimalki.github.io/SATs-Quiz/book5.jpg",
-      "pdfUrl": "https://mankimalki.github.io/SATs-Quiz/book5.pdf",
+      "pdfUrl": "/syllabus/chemistry-gcse-edexcel.pdf",
       "detailUrl": "/syllabus/chemistry-gcse-edexcel"
     },
     {
@@ -62,8 +57,7 @@
       "subject": "Physics",
       "examBoard": "OCR",
       "code": "J249",
-      "imageUrl": "https://mankimalki.github.io/SATs-Quiz/book6.jpg",
-      "pdfUrl": "https://mankimalki.github.io/SATs-Quiz/book6.pdf",
+      "pdfUrl": "/syllabus/physics-gcse-ocr.pdf",
       "detailUrl": "/syllabus/physics-gcse-ocr"
     },
     {
@@ -73,8 +67,7 @@
       "subject": "Biology",
       "examBoard": "AQA",
       "code": "7402",
-      "imageUrl": "https://mankimalki.github.io/SATs-Quiz/book7.jpg",
-      "pdfUrl": "https://mankimalki.github.io/SATs-Quiz/book7.pdf",
+      "pdfUrl": "/syllabus/biology-alevel-aqa.pdf",
       "detailUrl": "/syllabus/biology-alevel-aqa"
     },
     {
@@ -84,8 +77,7 @@
       "subject": "Maths",
       "examBoard": "Edexcel",
       "code": "9MA0",
-      "imageUrl": "https://mankimalki.github.io/SATs-Quiz/book8.jpg",
-      "pdfUrl": "https://mankimalki.github.io/SATs-Quiz/book8.pdf",
+      "pdfUrl": "/syllabus/maths-alevel-edexcel.pdf",
       "detailUrl": "/syllabus/maths-alevel-edexcel"
     },
     {
@@ -95,8 +87,7 @@
       "subject": "Maths",
       "examBoard": "Edexcel",
       "code": "9MA0",
-      "imageUrl": "https://mankimalki.github.io/SATs-Quiz/book9.jpg",
-      "pdfUrl": "https://mankimalki.github.io/SATs-Quiz/book9.pdf",
+      "pdfUrl": "/syllabus/maths-alevel-edexcel.pdf",
       "detailUrl": "/syllabus/maths-alevel-edexcel"
     }
   ]
