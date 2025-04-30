@@ -7,7 +7,7 @@
       "subject": "Maths",
       "examBoard": "National",
       "code": "",
-      "imageUrl": "https://cdn.jsdelivr.net/gh/mankimalki/SATs-Quiz@b31b2841b48d7c9051c1d06160ee27f5701ac6eb/book1.jpg",
+      "imageUrl": "https://mankimalki.github.io/SATs-Quiz/book1.jpg",
       "pdfUrl": "https://mankimalki.github.io/SATs-Quiz/book1.pdf",
       "detailUrl": "/syllabus/maths-ks1"
     },
@@ -18,7 +18,7 @@
       "subject": "Science",
       "examBoard": "National",
       "code": "",
-      "imageUrl": "https://cdn.jsdelivr.net/gh/mankimalki/SATs-Quiz@b31b2841b48d7c9051c1d06160ee27f5701ac6eb/book2.jpg",
+      "imageUrl": "https://mankimalki.github.io/SATs-Quiz/book2.jpg",
       "pdfUrl": "https://mankimalki.github.io/SATs-Quiz/book2.pdf",
       "detailUrl": "/syllabus/science-ks2"
     },
@@ -29,7 +29,7 @@
       "subject": "Maths",
       "examBoard": "National",
       "code": "",
-      "imageUrl": "https://cdn.jsdelivr.net/gh/mankimalki/SATs-Quiz@b31b2841b48d7c9051c1d06160ee27f5701ac6eb/book3.jpg",
+      "imageUrl": "https://mankimalki.github.io/SATs-Quiz/book3.jpg",
       "pdfUrl": "https://mankimalki.github.io/SATs-Quiz/book3.pdf",
       "detailUrl": "/syllabus/maths-ks3"
     },
@@ -40,7 +40,7 @@
       "subject": "Biology",
       "examBoard": "AQA",
       "code": "8461",
-      "imageUrl": "https://cdn.jsdelivr.net/gh/mankimalki/SATs-Quiz@b31b2841b48d7c9051c1d06160ee27f5701ac6eb/book4.jpg",
+      "imageUrl": "https://mankimalki.github.io/SATs-Quiz/book4.jpg",
       "pdfUrl": "https://mankimalki.github.io/SATs-Quiz/book4.pdf",
       "detailUrl": "/syllabus/biology-gcse-aqa"
     },
@@ -51,7 +51,7 @@
       "subject": "Chemistry",
       "examBoard": "Edexcel",
       "code": "1CH0",
-      "imageUrl": "https://cdn.jsdelivr.net/gh/mankimalki/SATs-Quiz@b31b2841b48d7c9051c1d06160ee27f5701ac6eb/book5.jpg",
+      "imageUrl": "https://mankimalki.github.io/SATs-Quiz/book5.jpg",
       "pdfUrl": "https://mankimalki.github.io/SATs-Quiz/book5.pdf",
       "detailUrl": "/syllabus/chemistry-gcse-edexcel"
     },
@@ -62,7 +62,7 @@
       "subject": "Physics",
       "examBoard": "OCR",
       "code": "J249",
-      "imageUrl": "https://cdn.jsdelivr.net/gh/mankimalki/SATs-Quiz@b31b2841b48d7c9051c1d06160ee27f5701ac6eb/book6.jpg",
+      "imageUrl": "https://mankimalki.github.io/SATs-Quiz/book6.jpg",
       "pdfUrl": "https://mankimalki.github.io/SATs-Quiz/book6.pdf",
       "detailUrl": "/syllabus/physics-gcse-ocr"
     },
@@ -73,7 +73,7 @@
       "subject": "Biology",
       "examBoard": "AQA",
       "code": "7402",
-      "imageUrl": "https://cdn.jsdelivr.net/gh/mankimalki/SATs-Quiz@b31b2841b48d7c9051c1d06160ee27f5701ac6eb/book7.jpg",
+      "imageUrl": "https://mankimalki.github.io/SATs-Quiz/book7.jpg",
       "pdfUrl": "https://mankimalki.github.io/SATs-Quiz/book7.pdf",
       "detailUrl": "/syllabus/biology-alevel-aqa"
     },
@@ -84,7 +84,7 @@
       "subject": "Maths",
       "examBoard": "Edexcel",
       "code": "9MA0",
-      "imageUrl": "https://cdn.jsdelivr.net/gh/mankimalki/SATs-Quiz@b31b2841b48d7c9051c1d06160ee27f5701ac6eb/book8.jpg",
+      "imageUrl": "https://mankimalki.github.io/SATs-Quiz/book8.jpg",
       "pdfUrl": "https://mankimalki.github.io/SATs-Quiz/book8.pdf",
       "detailUrl": "/syllabus/maths-alevel-edexcel"
     },
@@ -95,7 +95,7 @@
       "subject": "Maths",
       "examBoard": "Edexcel",
       "code": "9MA0",
-      "imageUrl": "https://cdn.jsdelivr.net/gh/mankimalki/SATs-Quiz@b31b2841b48d7c9051c1d06160ee27f5701ac6eb/book9.jpg",
+      "imageUrl": "https://mankimalki.github.io/SATs-Quiz/book9.jpg",
       "pdfUrl": "https://mankimalki.github.io/SATs-Quiz/book9.pdf",
       "detailUrl": "/syllabus/maths-alevel-edexcel"
     }

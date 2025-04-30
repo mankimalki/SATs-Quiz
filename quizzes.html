@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find the perfect quiz for your educational needs. Filter by year level, exam type, subject and question count to get personalized practice material.">
+    <meta name="keywords" content="educational quizzes, exam preparation, SATs practice, GCSE revision, A Level quizzes, maths practice, English practice, science quizzes">
+    <meta name="author" content="EduResources">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Find Your Perfect Quiz | Personalized Practice | EduResources">
+    <meta property="og:description" content="Filter and find the ideal quiz for your year level, subject and exam preparation needs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/find-quiz">
+    <meta name="theme-color" content="#3498db">
+    <link rel="canonical" href="https://yourdomain.com/find-quiz">
+    
+    <title>Find Your Perfect Quiz | Personalized Practice | EduResources</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.webmanifest">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --correct-color: #2ecc71;
+            --incorrect-color: #e74c3c;
+            --light-gray: #f5f5f5;
+            --medium-gray: #ecf0f1;
+            --text-color: #333;
+            --white: #ffffff;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            --transition: all 0.2s ease;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-gray);
+            padding: 0;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: var(--white);
+            box-shadow: var(--box-shadow);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        
+        .logo i {
+            color: var(--secondary-color);
+            margin-right: 8px;
+        }
+        
+        /* Setup screen styles */
+        .setup-container {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            padding: 30px;
+            margin-top: 20px;
+            text-align: center;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .setup-title {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .setup-description {
+            margin-bottom: 25px;
+            color: var(--text-color);
+        }
+        
+        .setup-options {
+            margin-bottom: 30px;
+        }
+        
+        .setup-option {
+            margin-bottom: 15px;
+        }
+        
+        .setup-option label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            text-align: left;
+            display: flex;
+            align-items: center;
+        }
+        
+        .setup-option label i {
+            margin-right: 8px;
+            color: var(--secondary-color);
+            width: 20px;
+        }
+        
+        .setup-select {
+            width: 100%;
+            padding: 12px;
+            border-radius: var(--border-radius);
+            border: 2px solid var(--medium-gray);
+            font-size: 1rem;
+            transition: var(--transition);
+            appearance: none;
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%233498db%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-6.4%200-12.5%203.9-15.5%209.7l141%20141.6c2.2%202.2%205.2%203.2%208%203.2s5.8-1%208-3.2l141-141.6c3-5.8-1-11.6-7-11.6z%22/%3E%3C/svg%3E');
+            background-repeat: no-repeat;
+            background-position: right 12px top 50%;
+            background-size: 16px 12px;
+        }
+        
+        .setup-select:focus {
+            border-color: var(--secondary-color);
+            outline: none;
+        }
+        
+        .btn {
+            padding: 12px 24px;
+            border-radius: var(--border-radius);
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary-color);
+            color: var(--white);
+        }
+        
+        .btn-primary:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .btn i {
+            margin-right: 8px;
+        }
+        
+        /* Loading State */
+        .loading-container {
+            text-align: center;
+            padding: 40px;
+            display: none;
+        }
+        
+        .loading-spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            border-top: 4px solid var(--secondary-color);
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .setup-container {
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .setup-option label {
+                font-size: 0.95rem;
+            }
+            
+            .setup-select {
+                padding: 10px;
+                font-size: 0.95rem;
+            }
+            
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="/" class="logo">
+                <i class="fas fa-book-open"></i>
+                <span>EduResources</span>
+            </a>
+        </div>
+    </header>
+    
+    <div class="container">
+        <!-- Setup Screen -->
+        <div id="setup-screen" class="setup-container">
+            <h1 class="setup-title">Find Your Perfect Quiz</h1>
+            <p class="setup-description">Filter by your requirements to find the ideal practice quiz for your needs.</p>
+            
+            <div class="setup-options">
+                <div class="setup-option">
+                    <label for="year-level"><i class="fas fa-graduation-cap"></i> Year/Level:</label>
+                    <select id="year-level" class="setup-select">
+                        <option value="all">All Years/Levels</option>
+                        <option value="year1">Year 1</option>
+                        <option value="year2">Year 2</option>
+                        <option value="year3">Year 3</option>
+                        <option value="year4">Year 4</option>
+                        <option value="year5">Year 5</option>
+                        <option value="year6">Year 6</option>
+                        <option value="year7">Year 7</option>
+                        <option value="year8">Year 8</option>
+                        <option value="year9">Year 9</option>
+                        <option value="year10">Year 10 (GCSE)</option>
+                        <option value="year11">Year 11 (GCSE)</option>
+                        <option value="alevels">A Levels</option>
+                    </select>
+                </div>
+                
+                <div class="setup-option">
+                    <label for="exam-type"><i class="fas fa-file-alt"></i> Exam Type:</label>
+                    <select id="exam-type" class="setup-select">
+                        <option value="all">All Exams</option>
+                        <option value="11plus">11+</option>
+                        <option value="sats">SATs</option>
+                        <option value="gcse">GCSE</option>
+                        <option value="alevels">A Levels</option>
+                    </select>
+                </div>
+                
+                <div class="setup-option">
+                    <label for="question-count"><i class="fas fa-list-ol"></i> Number of Questions:</label>
+                    <select id="question-count" class="setup-select">
+                        <option value="10">10 Questions (Quick Test)</option>
+                        <option value="15">15 Questions</option>
+                        <option value="20" selected>20 Questions (Standard Test)</option>
+                        <option value="25">25 Questions</option>
+                        <option value="30">30 Questions (Full Test)</option>
+                    </select>
+                </div>
+                
+                <div class="setup-option">
+                    <label for="subject"><i class="fas fa-book"></i> Subject:</label>
+                    <select id="subject" class="setup-select">
+                        <option value="all">All Subjects</option>
+                        <option value="maths">Maths</option>
+                        <option value="english">English</option>
+                        <option value="science">Science</option>
+                    </select>
+                </div>
+            </div>
+            
+            <button id="start-quiz-btn" class="btn btn-primary">
+                <i class="fas fa-play"></i> Start Quiz
+            </button>
+        </div>
+        
+        <!-- Loading State -->
+        <div id="loading-container" class="loading-container">
+            <div class="loading-spinner"></div>
+            <p>Finding your perfect quiz...</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const startQuizBtn = document.getElementById('start-quiz-btn');
+            const setupScreen = document.getElementById('setup-screen');
+            const loadingContainer = document.getElementById('loading-container');
+            
+            startQuizBtn.addEventListener('click', () => {
+                const yearLevel = document.getElementById('year-level').value;
+                const examType = document.getElementById('exam-type').value;
+                const questionCount = document.getElementById('question-count').value;
+                const subject = document.getElementById('subject').value;
+                
+                // Show loading state
+                setupScreen.style.display = 'none';
+                loadingContainer.style.display = 'block';
+                
+                // Simulate loading (in a real app, this would be an API call)
+                setTimeout(() => {
+                    // Construct the quiz URL based on filters
+                    let quizUrl = '/quiz?';
+                    if (yearLevel !== 'all') quizUrl += `year=${yearLevel}&`;
+                    if (examType !== 'all') quizUrl += `exam=${examType}&`;
+                    if (subject !== 'all') quizUrl += `subject=${subject}&`;
+                    quizUrl += `count=${questionCount}`;
+                    
+                    // Redirect to the quiz page (replace with actual navigation)
+                    console.log('Redirecting to:', quizUrl);
+                    // window.location.href = quizUrl;
+                    
+                    // For demo purposes, just show the setup screen again
+                    loadingContainer.style.display = 'none';
+                    setupScreen.style.display = 'block';
+                    alert('In a real application, this would redirect to the filtered quiz page.');
+                }, 1500);
+            });
+        });
+    </script>
+</body>
+</html>
