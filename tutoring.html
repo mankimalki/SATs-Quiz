@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Tutoring Packages | EduResources - GCSE, A-Level, SATs & 11+</title>
+    <meta name="description" content="Affordable expert tutoring for 11+, SATs, GCSE, A-Levels. 12 sessions/month with qualified UK tutors. Money-back guarantee. Book your free consultation today.">
+    <meta name="keywords" content="tutoring, GCSE tutoring, A-Level tutoring, SATs preparation, 11+ exam, online tutoring, affordable tutoring, UK tutors">
+    
+    <!-- PWA Configuration -->
+    <meta name="theme-color" content="#2c3e50">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    
+    <!-- Font Awesome via jsDelivr CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts via CDN with font-display: swap -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://eduresources.com/tutoring.html">
+    
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-gray: #f8f9fa;
+            --medium-gray: #e9ecef;
+            --dark-gray: #6c757d;
+            --white: #ffffff;
+            --success-color: #28a745;
+            --border-radius: 8px;
+            --card-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--light-gray);
+            color: var(--primary-color);
+            line-height: 1.6;
+            font-size: 1rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        /* Layout */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            padding: 0.75rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            width: 100%;
+        }
+
+        .logo {
+            font-size: 1.375rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo i {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+        }
+
+        /* Navigation */
+        .desktop-nav {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .desktop-nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9375rem;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 0.375rem;
+        }
+
+        .desktop-nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        .desktop-nav a i {
+            font-size: 1.1rem;
+        }
+
+        /* Donate Button */
+        .donate-btn {
+            background-color: var(--accent-color);
+            color: var(--white);
+            border: none;
+            border-radius: 50px;
+            padding: 0.5rem 1.25rem;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: var(--transition);
+            animation: pulse 2s infinite;
+            font-size: 0.9375rem;
+        }
+
+        .mobile-donate-btn {
+            display: none;
+            background-color: var(--accent-color);
+            color: var(--white);
+            border: none;
+            border-radius: 50px;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            font-weight: 600;
+            align-items: center;
+            gap: 0.5rem;
+            transition: var(--transition);
+            animation: pulse 2s infinite;
+            font-size: 0.875rem;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(231, 76, 60, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0); }
+        }
+
+        .donate-btn:hover, .mobile-donate-btn:hover {
+            background-color: #d62c1a;
+            transform: translateY(-2px);
+        }
+
+        .donate-btn i, .mobile-donate-btn i {
+            font-size: 1rem;
+        }
+
+        /* Hero Section */
+        .tutoring-hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            padding: 3rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+            width: 100%;
+        }
+
+        .tutoring-hero h1 {
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .tutoring-hero p {
+            font-size: 1.125rem;
+            max-width: 42rem;
+            margin: 0 auto 1.5rem;
+            opacity: 0.9;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            padding: 2.5rem 0;
+            background-color: var(--white);
+            width: 100%;
+        }
+
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 1.5rem;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--dark-gray);
+            font-size: 0.9375rem;
+        }
+
+        /* How It Works Section */
+        .how-it-works {
+            padding: 2.5rem 0;
+            background-color: var(--light-gray);
+            width: 100%;
+        }
+
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .step-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            box-shadow: var(--card-shadow);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .step-number {
+            width: 2.5rem;
+            height: 2.5rem;
+            background-color: var(--secondary-color);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin: 0 auto 1rem;
+        }
+
+        .step-title {
+            font-size: 1.125rem;
+            margin-bottom: 0.75rem;
+            color: var(--primary-color);
+        }
+
+        .step-description {
+            color: var(--dark-gray);
+            font-size: 0.9375rem;
+        }
+
+        /* Testimonials Section */
+        .testimonials-section {
+            padding: 2.5rem 0;
+            background-color: var(--white);
+            width: 100%;
+        }
+
+        .testimonials-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .testimonial-card {
+            background-color: var(--light-gray);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            box-shadow: var(--card-shadow);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+
+        /* Packages Section */
+        .packages-section {
+            padding: 2.5rem 0;
+            flex: 1;
+            width: 100%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .section-title h2 {
+            font-size: 1.75rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.75rem;
+            font-weight: 600;
+        }
+
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 5rem;
+            height: 0.25rem;
+            background-color: var(--secondary-color);
+            border-radius: 0.125rem;
+        }
+
+        .packages-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+            gap: 1.5rem;
+        }
+
+        /* Package Cards */
+        .package-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--card-shadow);
+            overflow: hidden;
+            transition: var(--transition);
+            border: 1px solid var(--medium-gray);
+        }
+
+        .package-card:hover {
+            transform: translateY(-0.5rem);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+            border-color: var(--secondary-color);
+        }
+
+        .package-header {
+            padding: 1.5rem;
+            text-align: center;
+            border-bottom: 1px solid var(--medium-gray);
+        }
+
+        .package-icon {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .package-title {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .package-price {
+            color: var(--accent-color);
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin: 0.5rem 0;
+        }
+
+        .package-duration {
+            color: var(--dark-gray);
+            font-size: 0.875rem;
+        }
+
+        .package-details {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease;
+        }
+
+        .package-card.active .package-details {
+            max-height: 1000px;
+            padding: 0 1.5rem 1.5rem;
+        }
+
+        .package-features {
+            list-style: none;
+            margin: 1.25rem 0;
+        }
+
+        .package-features li {
+            padding: 0.625rem 0;
+            position: relative;
+            padding-left: 1.875rem;
+            border-bottom: 1px dashed var(--medium-gray);
+            font-size: 0.9375rem;
+        }
+
+        .package-features li:before {
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: var(--success-color);
+            position: absolute;
+            left: 0;
+        }
+
+        /* Toggle Button */
+        .toggle-details {
+            background-color: var(--light-gray);
+            border: none;
+            color: var(--secondary-color);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 0.9375rem;
+            font-weight: 600;
+            transition: var(--transition);
+            font-size: 0.9375rem;
+        }
+
+        .toggle-details:hover {
+            background-color: rgba(52, 152, 219, 0.1);
+        }
+
+        .toggle-details i {
+            margin-left: 0.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .package-card.active .toggle-details i {
+            transform: rotate(180deg);
+        }
+
+        /* Action Buttons */
+        .action-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 0.9375rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            margin: 1.5rem auto 0;
+            transition: var(--transition);
+            width: calc(100% - 3rem);
+            border: none;
+            cursor: pointer;
+            font-size: 0.9375rem;
+        }
+
+        .action-btn:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(41, 128, 185, 0.2);
+        }
+
+        .action-btn i {
+            margin-right: 0.625rem;
+        }
+
+        .whatsapp-btn {
+            background-color: #25D366;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+            box-shadow: 0 4px 6px rgba(18, 140, 126, 0.2);
+        }
+
+        /* Donation Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .donation-modal {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            padding: 1.875rem;
+            max-width: 31.25rem;
+            width: 90%;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            position: relative;
+            transform: translateY(1.25rem);
+            transition: all 0.3s ease;
+        }
+
+        .modal-overlay.active .donation-modal {
+            transform: translateY(0);
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--dark-gray);
+            transition: var(--transition);
+            background: none;
+            border: none;
+        }
+
+        .close-modal:hover {
+            color: var(--accent-color);
+        }
+
+        .donation-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(6.25rem, 1fr));
+            gap: 0.625rem;
+            margin: 1.25rem 0;
+        }
+
+        .donation-option {
+            background-color: var(--light-gray);
+            border-radius: var(--border-radius);
+            padding: 0.9375rem;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 600;
+            border: 1px solid var(--medium-gray);
+        }
+
+        .donation-option:hover {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            border-color: var(--secondary-color);
+        }
+
+        .donation-option.selected {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            border-color: var(--secondary-color);
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 2.5rem 0;
+            background-color: var(--light-gray);
+            width: 100%;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 1rem;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            background-color: var(--white);
+            box-shadow: var(--card-shadow);
+        }
+
+        .faq-question {
+            padding: 1.25rem;
+            background-color: var(--white);
+            color: var(--primary-color);
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+
+        .faq-question:hover {
+            background-color: var(--light-gray);
+        }
+
+        .faq-question i {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0 1.25rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 0 1.25rem 1.25rem;
+        }
+
+/* CTA Section - Optimized Typography */
+.cta-section {
+    padding: 2rem 0;
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+}
+
+.cta-content {
+    max-width: 36em; /* Better for readability */
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.cta-title {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.cta-description {
+    font-size: 0.9375rem; /* 15px */
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    opacity: 0.92;
+    max-width: 32em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Slightly larger on desktop */
+@media (min-width: 768px) {
+    .cta-section {
+        padding: 2.5rem 0;
+    }
+    
+    .cta-title {
+        font-size: 1.375rem; /* 22px */
+        margin-bottom: 0.875rem;
+    }
+    
+    .cta-description {
+        font-size: 1rem; /* 16px */
+    }
+}
+
+/* WhatsApp button adjustments */
+.cta-section .whatsapp-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9375rem;
+    border-radius: 50px;
+    display: inline-flex;
+    width: auto;
+    margin-top: 0.5rem;
+}
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 2.5rem 0 1rem;
+            width: 100%;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-column h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-column a {
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            font-size: 0.875rem;
+            opacity: 0.9;
+        }
+
+        .footer-column a:hover {
+            color: var(--secondary-color);
+            opacity: 1;
+            padding-left: 0.3125rem;
+        }
+
+        .footer-column a i {
+            margin-right: 0.5rem;
+            width: 1.25rem;
+            text-align: center;
+            font-size: 0.75rem;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 1.25rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.8125rem;
+            opacity: 0.8;
+        }
+
+        /* Bottom Navigation */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--white);
+            display: flex;
+            justify-content: space-around;
+            padding: 0.5rem 0;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            z-index: 999;
+        }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: var(--dark-gray);
+            font-size: 0.75rem;
+            padding: 0.5rem;
+            flex: 1;
+            transition: var(--transition);
+        }
+
+        .nav-item i {
+            font-size: 1.25rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .nav-item.active {
+            color: var(--secondary-color);
+        }
+
+        .nav-item:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .desktop-nav {
+                display: none;
+            }
+            
+            .mobile-donate-btn {
+                display: flex;
+            }
+            
+            .tutoring-hero {
+                padding: 2.5rem 0;
+            }
+            
+            .tutoring-hero h1 {
+                font-size: 1.75rem;
+            }
+            
+            .tutoring-hero p {
+                font-size: 1rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.5rem;
+            }
+            
+            .package-header {
+                padding: 1.25rem;
+            }
+            
+            .package-title {
+                font-size: 1.125rem;
+            }
+            
+            .package-price {
+                font-size: 1.375rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .tutoring-hero h1 {
+                font-size: 1.5rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.375rem;
+            }
+            
+            .package-features li {
+                font-size: 0.875rem;
+                padding-left: 1.5rem;
+            }
+            
+            .action-btn {
+                width: 100%;
+                font-size: 0.875rem;
+            }
+            
+            .stats-container {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .stat-number {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Donation Modal -->
+    <div class="modal-overlay" id="donationModal">
+        <div class="donation-modal">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <h2>Support Our Educational Mission</h2>
+            <p>Your donation helps us provide free resources and affordable tutoring to students worldwide. Every contribution makes a difference.</p>
+            
+            <div class="donation-options">
+                <div class="donation-option">£5</div>
+                <div class="donation-option">£10</div>
+                <div class="donation-option selected">£20</div>
+                <div class="donation-option">£50</div>
+                <div class="donation-option">Other</div>
+            </div>
+            
+            <button class="action-btn" style="width: 100%;">
+                <i class="fas fa-heart"></i> Donate Now
+            </button>
+            <p style="text-align: center; margin-top: 1rem; font-size: 0.875rem;">Thank you for your generosity!</p>
+        </div>
+    </div>
+
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-book-open"></i>
+                <span>EduResources</span>
+            </a>
+            
+            <nav class="desktop-nav">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="pastpapers.html"><i class="fas fa-file-alt"></i> Past Papers</a>
+                <a href="resources.html"><i class="fas fa-book"></i> Resources</a>
+                <a href="tutoring.html" class="active"><i class="fas fa-chalkboard-teacher"></i> Tutoring</a>
+                <button class="donate-btn" id="desktopDonateBtn">
+                    <i class="fas fa-heart"></i> Donate
+                </button>
+            </nav>
+            
+            <button class="mobile-donate-btn" id="mobileDonateBtnHeader">
+                <i class="fas fa-heart"></i> Donate
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Tutoring Hero Section -->
+        <section class="tutoring-hero">
+            <div class="container">
+                <h1>Expert Tutoring Packages</h1>
+                <p>Personalized 1:1 tutoring with qualified teachers to help you achieve academic excellence</p>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Students Helped</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">96%</div>
+                        <div class="stat-label">Satisfaction Rate</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Qualified Tutors</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Money Back Guarantee</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works">
+            <div class="container">
+                <div class="section-title">
+                    <h2>How Our Tutoring Works</h2>
+                    <p>Simple steps to get started with your personalized learning journey</p>
+                </div>
+                
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3 class="step-title">Choose Your Package</h3>
+                        <p class="step-description">Select the tutoring package that matches your academic needs and goals.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3 class="step-title">Schedule Sessions</h3>
+                        <p class="step-description">Book convenient time slots that fit your schedule and availability.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3 class="step-title">Meet Your Tutor</h3>
+                        <p class="step-description">Connect with your dedicated tutor via our secure online platform.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <h3 class="step-title">Achieve Results</h3>
+                        <p class="step-description">See measurable improvement in your understanding and grades.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Packages Section -->
+        <section class="packages-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Tutoring Programs</h2>
+                    <p>Comprehensive packages tailored to different educational levels</p>
+                </div>
+                
+                <div class="packages-container">
+                    <!-- 11+ Package -->
+                    <div class="package-card">
+                        <div class="package-header">
+                            <div class="package-icon">
+                                <i class="fas fa-child"></i>
+                            </div>
+                            <h3 class="package-title">11+ Preparation</h3>
+                            <div class="package-price">£60/month</div>
+                            <div class="package-duration">12 sessions (1hr each)</div>
+                        </div>
+                        
+                        <button class="toggle-details">
+                            View Details <i class="fas fa-chevron-down"></i>
+                        </button>
+                        
+                        <div class="package-details">
+                            <ul class="package-features">
+                                <li>Comprehensive coverage of all 11+ subjects</li>
+                                <li>Specialized preparation for grammar schools</li>
+                                <li>Verbal & non-verbal reasoning techniques</li>
+                                <li>Mathematics problem-solving strategies</li>
+                                <li>English comprehension and creative writing</li>
+                                <li>Full-length mock exams with feedback</li>
+                                <li>Personalized progress tracking</li>
+                                <li>Exam technique and time management</li>
+                            </ul>
+                            <a href="https://wa.me/923379244731" class="action-btn whatsapp-btn" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Enquire Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- SATs Package -->
+                    <div class="package-card">
+                        <div class="package-header">
+                            <div class="package-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3 class="package-title">SATs Preparation</h3>
+                            <div class="package-price">£60/month</div>
+                            <div class="package-duration">12 sessions (1hr each)</div>
+                        </div>
+                        
+                        <button class="toggle-details">
+                            View Details <i class="fas fa-chevron-down"></i>
+                        </button>
+                        
+                        <div class="package-details">
+                            <ul class="package-features">
+                                <li>Complete SATs curriculum coverage</li>
+                                <li>Mathematics concepts and problem-solving</li>
+                                <li>English reading comprehension skills</li>
+                                <li>Grammar and punctuation mastery</li>
+                                <li>Science reasoning (where applicable)</li>
+                                <li>Practice papers with detailed feedback</li>
+                                <li>Progress reports for parents</li>
+                                <li>Stress management techniques</li>
+                            </ul>
+                            <a href="https://wa.me/923379244731" class="action-btn whatsapp-btn" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Enquire Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Year 1-6 Package -->
+                    <div class="package-card">
+                        <div class="package-header">
+                            <div class="package-icon">
+                                <i class="fas fa-pencil-alt"></i>
+                            </div>
+                            <h3 class="package-title">Primary School (Year 1-6)</h3>
+                            <div class="package-price">£60/month</div>
+                            <div class="package-duration">12 sessions (1hr each)</div>
+                        </div>
+                        
+                        <button class="toggle-details">
+                            View Details <i class="fas fa-chevron-down"></i>
+                        </button>
+                        
+                        <div class="package-details">
+                            <ul class="package-features">
+                                <li>Mathematics fundamentals and beyond</li>
+                                <li>English reading and writing skills</li>
+                                <li>Science concepts and experiments</li>
+                                <li>Reading comprehension strategies</li>
+                                <li>Creative writing development</li>
+                                <li>Spelling and grammar mastery</li>
+                                <li>Numeracy building blocks</li>
+                                <li>Homework support and guidance</li>
+                            </ul>
+                            <a href="https://wa.me/923379244731" class="action-btn whatsapp-btn" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Enquire Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Year 7-9 Package -->
+                    <div class="package-card">
+                        <div class="package-header">
+                            <div class="package-icon">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <h3 class="package-title">Secondary School (Year 7-9)</h3>
+                            <div class="package-price">£80/month</div>
+                            <div class="package-duration">12 sessions (1hr each)</div>
+                        </div>
+                        
+                        <button class="toggle-details">
+                            View Details <i class="fas fa-chevron-down"></i>
+                        </button>
+                        
+                        <div class="package-details">
+                            <ul class="package-features">
+                                <li>Advanced mathematics concepts</li>
+                                <li>English language and literature</li>
+                                <li>Science (combined or separate subjects)</li>
+                                <li>Essay writing and analysis skills</li>
+                                <li>Algebra and geometry foundations</li>
+                                <li>Exam preparation techniques</li>
+                                <li>Study skills and organization</li>
+                                <li>Transition to GCSE support</li>
+                            </ul>
+                            <a href="https://wa.me/923379244731" class="action-btn whatsapp-btn" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Enquire Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- GCSE Package -->
+                    <div class="package-card">
+                        <div class="package-header">
+                            <div class="package-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h3 class="package-title">GCSE Preparation</h3>
+                            <div class="package-price">£90/month</div>
+                            <div class="package-duration">12 sessions (1hr each)</div>
+                        </div>
+                        
+                        <button class="toggle-details">
+                            View Details <i class="fas fa-chevron-down"></i>
+                        </button>
+                        
+                        <div class="package-details">
+                            <ul class="package-features">
+                                <li>All GCSE subjects available</li>
+                                <li>Exam board-specific content (AQA, Edexcel, OCR)</li>
+                                <li>Past paper practice and analysis</li>
+                                <li>Subject-specific revision strategies</li>
+                                <li>Coursework guidance and feedback</li>
+                                <li>Grade improvement focus</li>
+                                <li>Personalized study plans</li>
+                                <li>Exam technique workshops</li>
+                            </ul>
+                            <a href="https://wa.me/923379244731" class="action-btn whatsapp-btn" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Enquire Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- A-Level Package -->
+                    <div class="package-card">
+                        <div class="package-header">
+                            <div class="package-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <h3 class="package-title">A-Level Preparation</h3>
+                            <div class="package-price">£90/month</div>
+                            <div class="package-duration">12 sessions (1hr each)</div>
+                        </div>
+                        
+                        <button class="toggle-details">
+                            View Details <i class="fas fa-chevron-down"></i>
+                        </button>
+                        
+                        <div class="package-details">
+                            <ul class="package-features">
+                                <li>Comprehensive A-Level subject coverage</li>
+                                <li>Exam board-specific syllabus</li>
+                                <li>Advanced essay writing techniques</li>
+                                <li>Practical skills for sciences</li>
+                                <li>University preparation guidance</li>
+                                <li>Extended project support</li>
+                                <li>Critical thinking development</li>
+                                <li>UCAS personal statement review</li>
+                            </ul>
+                            <a href="https://wa.me/923379244731" class="action-btn whatsapp-btn" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Enquire Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>What Our Students Say</h2>
+                    <p>Success stories from students who improved their grades with our tutoring</p>
+                </div>
+                
+                <div class="testimonials-container">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"The GCSE maths tutoring helped me move from a grade 5 to a grade 8 in just 3 months. The personalized approach made all the difference!"</p>
+                        <div class="testimonial-author">- Sarah K., GCSE Student</div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"My daughter's confidence in her 11+ preparation improved dramatically after just a few sessions. The tutors are patient and knowledgeable."</p>
+                        <div class="testimonial-author">- David M., Parent</div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"The A-Level chemistry tutoring was exceptional. The tutor broke down complex concepts into understandable parts that really helped with my exams."</p>
+                        <div class="testimonial-author">- James L., A-Level Student</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How are tutors selected?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>All our tutors are highly qualified professionals with verified teaching credentials and subject expertise. They undergo a rigorous selection process including background checks and teaching demonstrations.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What is your cancellation policy?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can cancel or reschedule sessions with at least 24 hours notice. Sessions cancelled with less notice may be subject to a cancellation fee.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Do you offer trial sessions?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer a 30-minute trial session for £10 which can be applied to your first package if you choose to continue.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How do online sessions work?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sessions are conducted via secure video conferencing with interactive whiteboard technology. All you need is a computer or tablet with internet connection.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What if I'm not satisfied with my tutor?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We offer a 100% satisfaction guarantee. If you're not happy with your first session, we'll either match you with a different tutor or provide a full refund.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Boost Your Grades?</h2>
+                    <p class="cta-description">Get started with one of our expert tutors today and see the difference personalized learning can make.</p>
+                    <a href="https://wa.me/923379244731" class="action-btn whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Contact Us Now
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Qualifications</h3>
+                    <ul>
+                        <li><a href="gcse.html"><i class="fas fa-chevron-right"></i> GCSE</a></li>
+                        <li><a href="alevels.html"><i class="fas fa-chevron-right"></i> A-Levels</a></li>
+                        <li><a href="igcse.html"><i class="fas fa-chevron-right"></i> IGCSE</a></li>
+                        <li><a href="sats.html"><i class="fas fa-chevron-right"></i> SATs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="pastpapers.html"><i class="fas fa-chevron-right"></i> Past Papers</a></li>
+                        <li><a href="books.html"><i class="fas fa-chevron-right"></i> Free Books</a></li>
+                        <li><a href="syllabus.html"><i class="fas fa-chevron-right"></i> Syllabus</a></li>
+                        <li><a href="quizzes.html"><i class="fas fa-chevron-right"></i> Quizzes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="tutoring.html"><i class="fas fa-chevron-right"></i> Tutoring</a></li>
+                        <li><a href="tips.html"><i class="fas fa-chevron-right"></i> Exam Tips</a></li>
+                        <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Study Blog</a></li>
+                        <li><a href="faq.html"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="privacy.html"><i class="fas fa-chevron-right"></i> Privacy</a></li>
+                        <li><a href="terms.html"><i class="fas fa-chevron-right"></i> Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2025 EduResources. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="pastpapers.html" class="nav-item">
+            <i class="fas fa-file-alt"></i>
+            <span>Papers</span>
+        </a>
+        <a href="resources.html" class="nav-item">
+            <i class="fas fa-book"></i>
+            <span>Resources</span>
+        </a>
+        <a href="tutoring.html" class="nav-item active">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <span>Tutoring</span>
+        </a>
+    </nav>
+
+    <!-- JavaScript -->
+    <script>
+        // Service Worker Registration for PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful');
+                    })
+                    .catch(err => {
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+            });
+        }
+
+        // Package Details Toggle - Only one open at a time
+        document.querySelectorAll('.toggle-details').forEach(button => {
+            button.addEventListener('click', function() {
+                const packageCard = this.closest('.package-card');
+                const isActive = packageCard.classList.contains('active');
+                
+                // Close all other package details
+                document.querySelectorAll('.package-card').forEach(card => {
+                    card.classList.remove('active');
+                });
+                
+                // Toggle current card if it wasn't active
+                if (!isActive) {
+                    packageCard.classList.add('active');
+                }
+            });
+        });
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const faqItem = this.closest('.faq-item');
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all other FAQs
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Toggle current FAQ if it wasn't active
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+
+        // Donation Modal
+        const donationModal = document.getElementById('donationModal');
+        const desktopDonateBtn = document.getElementById('desktopDonateBtn');
+        const mobileDonateBtn = document.getElementById('mobileDonateBtnHeader');
+        const closeModal = document.getElementById('closeModal');
+
+        // Show modal when donate buttons are clicked
+        [desktopDonateBtn, mobileDonateBtn].forEach(btn => {
+            if (btn) {
+                btn.addEventListener('click', () => {
+                    donationModal.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                });
+            }
+        });
+
+        // Close modal
+        closeModal.addEventListener('click', () => {
+            donationModal.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        // Close modal when clicking outside
+        donationModal.addEventListener('click', (e) => {
+            if (e.target === donationModal) {
+                donationModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Donation option selection
+        const donationOptions = document.querySelectorAll('.donation-option');
+        donationOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                donationOptions.forEach(opt => opt.classList.remove('selected'));
+                option.classList.add('selected');
+            });
+        });
+
+        // Fix for scroll issues
+        document.addEventListener('DOMContentLoaded', function() {
+            // Reset body overflow when modal closes
+            const resetBodyScroll = function() {
+                if (!donationModal.classList.contains('active')) {
+                    document.body.style.overflow = '';
+                }
+            };
+
+            // Observe modal state changes
+            const observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutation) {
+                    if (mutation.attributeName === 'class') {
+                        resetBodyScroll();
+                    }
+                });
+            });
+
+            observer.observe(donationModal, { attributes: true });
+        });
+
+        // Optimize performance by deferring non-critical tasks
+        window.addEventListener('load', function() {
+            // Lazy load any non-critical resources
+            if ('requestIdleCallback' in window) {
+                window.requestIdleCallback(() => {
+                    // Any non-urgent initialization can go here
+                });
+            }
+        });
+    </script>
+</body>
+</html>

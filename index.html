@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Improved viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>EduResources - Free UK Education Resources, Past Papers & Study Materials</title>
+    <meta name="description" content="Free educational resources including past papers, syllabus, textbooks, quizzes and study notes for GCSE, A-Levels, IGCSE and more. Supported by all major UK exam boards.">
+    <meta name="keywords" content="past papers, GCSE, A-Level, syllabus, free textbooks, exam resources, revision materials, AQA, Edexcel, OCR, study notes, free education">
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="EduResources">
+
+    <!-- Favicon and App Icons -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+    <link rel="apple-touch-icon" href="apple-icon.png">
+    <link rel="mask-icon" href="safari-icon.svg" color="#2c3e50">
+
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="EduResources - Free UK Education Resources">
+    <meta property="og:description" content="Access thousands of free educational resources to help you succeed in your exams and studies">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://eduresources.org">
+    <meta property="og:image" content="https://eduresources.org/images/og-image.jpg">
+    <meta property="og:site_name" content="EduResources">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EduResources - Free UK Education Resources">
+    <meta name="twitter:description" content="Access thousands of free educational resources to help you succeed in your exams and studies">
+    <meta name="twitter:image" content="https://eduresources.org/images/twitter-card.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://eduresources.org">
+    
+    <!-- Preconnects -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <!-- Preloads -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></noscript>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/css/glide.core.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/css/glide.core.min.css"></noscript>
+    
+    <!-- Improved base font size and scaling -->
+    <style>
+        /* Base font size for better cross-browser consistency */
+        html {
+            font-size: 16px;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-gray: #f5f5f5;
+            --medium-gray: #e0e0e0;
+            --dark-gray: #7f8c8d;
+            --white: #ffffff;
+            --border-radius: 8px;
+            --card-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            --transition: all 0.2s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: var(--light-gray);
+            color: var(--primary-color);
+            line-height: 1.6;
+            padding-bottom: 60px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Improved container with better mobile padding */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        header {
+            background-color: var(--white);
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 0 1rem;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            margin-right: auto;
+        }
+
+        .logo i {
+            color: var(--secondary-color);
+            margin-right: 0.5rem;
+        }
+
+        /* Mobile Donate Button */
+        .mobile-donate-btn {
+            display: none;
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            font-weight: 600;
+            align-items: center;
+            gap: 0.3rem;
+            animation: pulse 2s infinite;
+            font-size: 0.9rem;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(231, 76, 60, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0); }
+        }
+
+        .desktop-nav {
+            display: none;
+        }
+
+        .desktop-nav .donate-btn {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            animation: pulse 2s infinite;
+            font-size: 0.9rem;
+        }
+
+        /* Improved hero section with better font scaling */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            padding: 3rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .hero p {
+            margin-bottom: 1.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1rem;
+            padding: 0 1rem;
+        }
+
+/* Search Bar Styles with perfect button alignment */
+.search-container {
+    max-width: 600px;
+    margin: 1rem auto 2rem;
+    position: relative;
+    padding: 0 1rem;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    padding-right: 3.2rem; /* Matches button width + spacing */
+    border-radius: 50px;
+    border: 1px solid var(--medium-gray);
+    font-size: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: var(--transition);
+    line-height: 1.2;
+}
+
+.search-container input:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 2px 15px rgba(52, 152, 219, 0.2);
+}
+
+.search-container button {
+    position: absolute;
+    top: 50%;
+    right: 1.2rem;
+    transform: translateY(-50%);
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    line-height: 1;
+    height: auto;
+    transition: var(--transition);
+}
+
+.search-container button:hover {
+    background-color: #2980b9;
+}
+        /* Improved features grid with better mobile layout */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+            padding: 0 1rem;
+        }
+
+        .feature-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+            text-decoration: none;
+            color: var(--primary-color);
+            display: block;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+        }
+
+        .feature-card p {
+            font-size: 0.9rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 3rem 0 2rem;
+            position: relative;
+            padding: 0 1rem;
+        }
+
+        .section-title h2 {
+            display: inline-block;
+            padding-bottom: 0.8rem;
+            font-size: 1.5rem;
+        }
+
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 5rem;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+
+        /* Improved exam boards section */
+        .exam-boards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+            padding: 0 1rem;
+        }
+
+        .exam-board-logo {
+            background-color: var(--white);
+            padding: 0.8rem 1.2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--card-shadow);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+        }
+
+        /* Testimonials Carousel with better mobile layout */
+        .testimonials-carousel {
+            margin: 2rem 0;
+            padding: 0 1rem;
+        }
+
+        .glide__slides {
+            padding: 1rem 0;
+        }
+
+        .testimonial {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            box-shadow: var(--card-shadow);
+            position: relative;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 0.5rem;
+        }
+
+        .testimonial:before {
+            content: '"';
+            font-size: 3rem;
+            color: var(--medium-gray);
+            position: absolute;
+            top: 0.5rem;
+            left: 0.5rem;
+            line-height: 1;
+            opacity: 0.3;
+        }
+
+        .testimonial-content {
+            margin: 1rem 0;
+            position: relative;
+            z-index: 1;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            flex-grow: 1;
+            padding-top: 0.5rem;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--secondary-color);
+            font-size: 0.85rem;
+            margin-top: auto;
+        }
+
+        .glide__arrows {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .glide__arrow {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 2.5rem;
+            height: 2.5rem;
+            cursor: pointer;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .glide__arrow:hover {
+            background-color: var(--primary-color);
+        }
+
+        /* Social Sharing */
+        .social-sharing {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+            padding: 0 1rem;
+        }
+
+        .social-icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-3px) scale(1.1);
+        }
+
+        .facebook { background-color: #3b5998; }
+        .twitter { background-color: #1DA1F2; }
+        .whatsapp { background-color: #25D366; }
+        .instagram { 
+            background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+        }
+        .linkedin { background-color: #0077B5; }
+        .email { background-color: var(--primary-color); }
+
+        /* Improved CTA section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            padding: 3rem 1rem;
+            text-align: center;
+            margin: 3rem 0;
+            border-radius: var(--border-radius);
+        }
+
+        .cta-section h2 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .cta-section p {
+            margin-bottom: 1.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--white);
+            padding: 0.8rem 1.8rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: var(--transition);
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Improved footer */
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 2rem 0 1rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            padding: 0 1rem;
+        }
+
+        .footer-column h3 {
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+            font-size: 0.95rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-column a {
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+            font-size: 0.85rem;
+            opacity: 0.9;
+            display: block;
+            padding: 0.2rem 0;
+        }
+
+        .footer-column a:hover {
+            color: var(--secondary-color);
+            opacity: 1;
+            padding-left: 0.3rem;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.8rem;
+            opacity: 0.8;
+            padding: 1rem;
+        }
+
+        /* Improved bottom navigation */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--white);
+            display: flex;
+            justify-content: space-around;
+            padding: 0.8rem 0;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: var(--dark-gray);
+            font-size: 0.75rem;
+            padding: 0.2rem 0.5rem;
+        }
+
+        .nav-item i {
+            font-size: 1.2rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .nav-item.active {
+            color: var(--secondary-color);
+        }
+
+        /* Donation Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .donation-modal {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            max-width: 500px;
+            width: 90%;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            position: relative;
+            transform: translateY(20px);
+            transition: transform 0.3s ease;
+        }
+
+        .modal-overlay.active .donation-modal {
+            transform: translateY(0);
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--dark-gray);
+            background: none;
+            border: none;
+        }
+
+        .donation-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 0.8rem;
+            margin: 1.5rem 0;
+        }
+
+        .donation-option {
+            background-color: var(--light-gray);
+            border-radius: var(--border-radius);
+            padding: 1rem;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.9rem;
+        }
+
+        .donation-option:hover {
+            background-color: var(--secondary-color);
+            color: var(--white);
+        }
+
+        .donation-option.selected {
+            background-color: var(--secondary-color);
+            color: var(--white);
+        }
+
+        .donate-now-btn {
+            background: linear-gradient(135deg, var(--accent-color), #c0392b);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 1rem;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .donate-now-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+
+        /* Floating WhatsApp Button */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 5rem;
+            right: 1rem;
+            background-color: #25D366;
+            color: white;
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            z-index: 99;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .floating-whatsapp:hover {
+            transform: translateY(-5px) scale(1.1);
+            background-color: #128C7E;
+        }
+
+        /* Install Prompt */
+        .install-prompt {
+            position: fixed;
+            bottom: 5rem;
+            left: 1rem;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: none;
+            max-width: 300px;
+            font-size: 0.9rem;
+        }
+
+        .install-prompt button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
+            padding: 0.5rem 1rem;
+            margin-top: 0.5rem;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        /* Offline Notice */
+        .offline-notice {
+            position: fixed;
+            bottom: 5rem;
+            left: 1rem;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: none;
+            max-width: 300px;
+            font-size: 0.9rem;
+        }
+
+        /* No Results Message */
+        .no-results {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 1.5rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        /* Responsive adjustments */
+        @media (min-width: 768px) {
+            .desktop-nav {
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+            }
+            
+            .desktop-nav a {
+                color: var(--primary-color);
+                text-decoration: none;
+                font-weight: 500;
+                transition: var(--transition);
+                font-size: 0.95rem;
+            }
+            
+            .desktop-nav a:hover {
+                color: var(--secondary-color);
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .desktop-nav .donate-btn {
+                padding: 0.6rem 1.2rem;
+                font-size: 0.95rem;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+            }
+
+            .mobile-donate-btn {
+                display: none;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .mobile-donate-btn {
+                display: flex;
+            }
+            
+            .header-container {
+                padding: 0 1rem;
+            }
+
+            .hero {
+                padding: 2rem 0;
+            }
+            
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+            
+            .search-container input {
+                padding: 0.8rem 1rem;
+            }
+            
+            .search-container button {
+                padding: 0.5rem 1rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                padding: 0 1rem;
+            }
+
+            .testimonial {
+                min-height: auto;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+
+            .cta-section h2 {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.4rem;
+            }
+
+            .hero p {
+                font-size: 0.95rem;
+            }
+
+            .feature-card {
+                padding: 1.2rem;
+            }
+
+            .feature-icon {
+                font-size: 2rem;
+            }
+
+            .exam-board-logo {
+                padding: 0.6rem 1rem;
+                font-size: 0.8rem;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .bottom-nav .nav-item {
+                font-size: 0.7rem;
+            }
+
+            .bottom-nav .nav-item i {
+                font-size: 1rem;
+            }
+        }
+    </style>
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "EduResources",
+      "url": "https://eduresources.org",
+      "logo": "https://eduresources.org/images/logo.png",
+      "sameAs": [
+        "https://facebook.com/eduresources",
+        "https://twitter.com/eduresources",
+        "https://instagram.com/eduresources"
+      ],
+      "description": "Free educational resources including past papers, syllabus, textbooks, quizzes and study notes for GCSE, A-Levels, IGCSE and more.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "London",
+        "addressRegion": "England",
+        "postalCode": "WC1X 8QT",
+        "addressCountry": "GB"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Offline Notice -->
+    <div class="offline-notice" id="offlineNotice">
+        You are currently offline. Some features may not be available.
+    </div>
+
+    <!-- Install Prompt -->
+    <div class="install-prompt" id="installPrompt">
+        <p>Install EduResources to your home screen for quick access and offline use!</p>
+        <button id="installButton">Install Now</button>
+        <button id="dismissInstall" style="background-color: var(--dark-gray); margin-left: 5px;">Dismiss</button>
+    </div>
+
+    <!-- Donation Modal -->
+    <div class="modal-overlay" id="donationModal">
+        <div class="donation-modal">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h2>Support Free Education for All</h2>
+            <p>Your donation helps us provide free resources to thousands of students every month. Choose an amount to contribute:</p>
+            
+            <div class="donation-options">
+                <div class="donation-option" data-amount="5">£5</div>
+                <div class="donation-option" data-amount="10">£10</div>
+                <div class="donation-option selected" data-amount="20">£20</div>
+                <div class="donation-option" data-amount="50">£50</div>
+                <div class="donation-option" data-amount="other">Other</div>
+            </div>
+            
+            <button class="donate-now-btn" id="donateNowBtn">
+                <i class="fas fa-heart"></i> Donate Now
+            </button>
+            <p style="text-align: center; margin-top: 15px; font-size: 0.9rem;">
+                <i class="fas fa-lock"></i> Secure donation processing
+            </p>
+        </div>
+    </div>
+
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-book-open"></i>
+                EduResources
+            </a>
+            
+            <!-- Mobile Donate Button -->
+            <button class="mobile-donate-btn" id="mobileDonateBtn">
+                <i class="fas fa-heart"></i>
+                Donate
+            </button>
+            
+            <nav class="desktop-nav">
+                <a href="index.html">Home</a>
+                <a href="pastpapers.html">Past Papers</a>
+                <a href="resources.html">Resources</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <button class="donate-btn" id="desktopDonateBtn">
+                    <i class="fas fa-heart"></i> Donate
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Your Complete Educational Resource</h1>
+            <p>Access thousands of free resources to help you succeed in your exams and studies</p>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search resources..." aria-label="Search educational resources">
+                <button id="searchButton"><i class="fas fa-search"></i> Search</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="features-grid">
+            <a href="books.html" class="feature-card" data-search="free books textbooks study guides download">
+                <div class="feature-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h3>Free Books</h3>
+                <p>Download free textbooks and study guides</p>
+            </a>
+            
+            <a href="pastpapers.html" class="feature-card" data-search="past papers exam papers solutions">
+                <div class="feature-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <h3>Past Papers</h3>
+                <p>Access past exam papers with solutions</p>
+            </a>
+            
+            <a href="syllabus.html" class="feature-card" data-search="syllabus specifications curriculum">
+                <div class="feature-icon">
+                    <i class="fas fa-list-alt"></i>
+                </div>
+                <h3>Syllabus</h3>
+                <p>Detailed subject syllabi and specifications</p>
+            </a>
+            
+            <a href="quizzes.html" class="feature-card" data-search="quizzes tests interactive questions">
+                <div class="feature-icon">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <h3>Quizzes</h3>
+                <p>Test your knowledge with interactive quizzes</p>
+            </a>
+            
+            <a href="worksheets.html" class="feature-card" data-search="worksheets practice printable">
+                <div class="feature-icon">
+                    <i class="fas fa-file-signature"></i>
+                </div>
+                <h3>Worksheets</h3>
+                <p>Printable practice worksheets</p>
+            </a>
+            
+            <a href="notes.html" class="feature-card" data-search="study notes revision notes topics">
+                <div class="feature-icon">
+                    <i class="fas fa-sticky-note"></i>
+                </div>
+                <h3>Study Notes</h3>
+                <p>Comprehensive revision notes by topic</p>
+            </a>
+            
+            <a href="tips.html" class="feature-card" data-search="exam tips strategies revision">
+                <div class="feature-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Exam Tips</h3>
+                <p>Strategies to ace your exams</p>
+            </a>
+            
+            <a href="tutoring.html" class="feature-card" data-search="online tutoring tutors help">
+                <div class="feature-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h3>Online Tutoring</h3>
+                <p>Connect with qualified tutors</p>
+            </a>
+        </div>
+
+        <div class="section-title">
+            <h2>Supported Exam Boards</h2>
+        </div>
+        
+        <div class="exam-boards">
+            <div class="exam-board-logo">AQA</div>
+            <div class="exam-board-logo">Edexcel</div>
+            <div class="exam-board-logo">OCR</div>
+            <div class="exam-board-logo">WJEC/Eduqas</div>
+            <div class="exam-board-logo">Cambridge (CIE)</div>
+        </div>
+
+        <div class="section-title">
+            <h2>What Students Say</h2>
+        </div>
+        
+        <!-- Testimonials Carousel -->
+        <div class="testimonials-carousel glide">
+            <div class="glide__track" data-glide-el="track">
+                <div class="glide__slides">
+                    <div class="testimonial glide__slide">
+                        <div class="testimonial-content">
+                            The past papers and mark schemes helped me improve my grades significantly! I went from a C to an A in just three months of using these resources.
+                        </div>
+                        <div class="testimonial-author">Sarah, A-Level Student</div>
+                    </div>
+                    
+                    <div class="testimonial glide__slide">
+                        <div class="testimonial-content">
+                            The study notes made complex topics easy to understand. The material is presented so clearly. Highly recommended for anyone struggling with difficult concepts.
+                        </div>
+                        <div class="testimonial-author">James, GCSE Student</div>
+                    </div>
+                    
+                    <div class="testimonial glide__slide">
+                        <div class="testimonial-content">
+                            The worksheets were perfect for last-minute revision before my exams. I could practice exactly what I needed and track my progress easily.
+                        </div>
+                        <div class="testimonial-author">Emily, IGCSE Student</div>
+                    </div>
+                    
+                    <div class="testimonial glide__slide">
+                        <div class="testimonial-content">
+                            The free books section saved me so much money. I found all the textbooks I needed for my courses without spending a penny.
+                        </div>
+                        <div class="testimonial-author">Michael, University Student</div>
+                    </div>
+                    
+                    <div class="testimonial glide__slide">
+                        <div class="testimonial-content">
+                            The quizzes helped me identify my weak areas and focus my revision effectively. My grades improved by two levels!
+                        </div>
+                        <div class="testimonial-author">Aisha, A-Level Student</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-chevron-left"></i></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <!-- Social Sharing -->
+        <div class="social-sharing">
+            <a href="#" class="social-icon facebook" onclick="shareOnSocial('facebook')" aria-label="Share on Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-icon twitter" onclick="shareOnSocial('twitter')" aria-label="Share on Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-icon whatsapp" onclick="shareOnSocial('whatsapp')" aria-label="Share on WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" class="social-icon instagram" onclick="shareOnSocial('instagram')" aria-label="Share on Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-icon linkedin" onclick="shareOnSocial('linkedin')" aria-label="Share on LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="social-icon email" onclick="shareViaEmail()" aria-label="Share via Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Boost Your Grades?</h2>
+            <p>Join thousands of students who are already using EduResources to succeed</p>
+            <a href="resources.html" class="btn">Get Started Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Qualifications</h3>
+                    <ul>
+                        <li><a href="gcse.html">GCSE</a></li>
+                        <li><a href="alevels.html">A-Levels</a></li>
+                        <li><a href="igcse.html">IGCSE</a></li>
+                        <li><a href="sats.html">SATs</a></li>
+                        <li><a href="11plus.html">11 Plus</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="pastpapers.html">Past Papers</a></li>
+                        <li><a href="books.html">Free Books</a></li>
+                        <li><a href="syllabus.html">Syllabus</a></li>
+                        <li><a href="quizzes.html">Quizzes</a></li>
+                        <li><a href="notes.html">Study Notes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="tutoring.html">Online Tutoring</a></li>
+                        <li><a href="tips.html">Exam Tips</a></li>
+                        <li><a href="blog.html">Study Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="about.html">Donate</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2025 EduResources. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/923379244731" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="pastpapers.html" class="nav-item">
+            <i class="fas fa-file-alt"></i>
+            <span>Papers</span>
+        </a>
+        <a href="resources.html" class="nav-item">
+            <i class="fas fa-book"></i>
+            <span>Resources</span>
+        </a>
+        <a href="about.html" class="nav-item">
+            <i class="fas fa-info-circle"></i>
+            <span>About</span>
+        </a>
+    </nav>
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/glide.min.js" as="script">
+    
+    <!-- Load non-critical scripts after page load -->
+    <script>
+        // Document ready function to ensure DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize all functionality
+            initDonationModal();
+            initSearchFunctionality();
+            initOfflineDetection();
+            initServiceWorker();
+            initInstallPrompt();
+            initTestimonialsCarousel();
+            initSocialSharing();
+        });
+
+        // Initialize Donation Modal
+        function initDonationModal() {
+            const donationModal = document.getElementById('donationModal');
+            const desktopDonateBtn = document.getElementById('desktopDonateBtn');
+            const mobileDonateBtn = document.getElementById('mobileDonateBtn');
+            const closeModal = document.getElementById('closeModal');
+            const donateNowBtn = document.getElementById('donateNowBtn');
+            const donationOptions = document.querySelectorAll('.donation-option');
+
+            // Show modal when donate buttons are clicked
+            if (desktopDonateBtn) {
+                desktopDonateBtn.addEventListener('click', showModal);
+            }
+
+            if (mobileDonateBtn) {
+                mobileDonateBtn.addEventListener('click', showModal);
+            }
+
+            // Close modal
+            closeModal.addEventListener('click', hideModal);
+
+            // Close modal when clicking outside
+            donationModal.addEventListener('click', function(e) {
+                if (e.target === donationModal) {
+                    hideModal();
+                }
+            });
+
+            // Donation option selection
+            donationOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    donationOptions.forEach(opt => opt.classList.remove('selected'));
+                    this.classList.add('selected');
+                });
+            });
+
+            // Donate now button
+            if (donateNowBtn) {
+                donateNowBtn.addEventListener('click', function() {
+                    const selectedOption = document.querySelector('.donation-option.selected');
+                    const amount = selectedOption ? selectedOption.dataset.amount : '20';
+                    alert(`Thank you for your donation of £${amount}!`);
+                    hideModal();
+                });
+            }
+
+            function showModal() {
+                donationModal.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+            }
+
+            function hideModal() {
+                donationModal.classList.remove('active');
+                document.body.style.overflow = ''; // Re-enable scrolling
+            }
+        }
+
+        // Initialize Search Functionality (works offline)
+        function initSearchFunctionality() {
+            const searchButton = document.getElementById('searchButton');
+            const searchInput = document.getElementById('searchInput');
+            const featureCards = document.querySelectorAll('.feature-card');
+
+            if (searchButton && searchInput) {
+                searchButton.addEventListener('click', performSearch);
+                searchInput.addEventListener('keyup', function(e) {
+                    if (e.key === 'Enter') {
+                        performSearch();
+                    }
+                });
+            }
+
+            function performSearch() {
+                const searchTerm = searchInput.value.toLowerCase().trim();
+                const featuresContainer = document.querySelector('.features-grid');
+                let foundResults = false;
+
+                // Remove any existing no-results message
+                const existingNoResults = document.querySelector('.no-results');
+                if (existingNoResults) {
+                    existingNoResults.remove();
+                }
+
+                if (searchTerm === '') {
+                    // Show all cards if search is empty
+                    featureCards.forEach(card => {
+                        card.style.display = 'block';
+                    });
+                    return;
+                }
+
+                featureCards.forEach(card => {
+                    const cardText = card.textContent.toLowerCase();
+                    const cardKeywords = card.dataset.search ? card.dataset.search.toLowerCase() : '';
+                    
+                    if (cardText.includes(searchTerm) || cardKeywords.includes(searchTerm)) {
+                        card.style.display = 'block';
+                        foundResults = true;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                if (!foundResults) {
+                    const noResults = document.createElement('p');
+                    noResults.className = 'no-results';
+                    noResults.textContent = 'No resources found matching your search. Try different keywords.';
+                    featuresContainer.appendChild(noResults);
+                }
+            }
+        }
+
+        // Initialize Offline Detection
+        function initOfflineDetection() {
+            const offlineNotice = document.getElementById('offlineNotice');
+
+            function updateOnlineStatus() {
+                if (!navigator.onLine) {
+                    offlineNotice.style.display = 'block';
+                } else {
+                    offlineNotice.style.display = 'none';
+                }
+            }
+
+            window.addEventListener('online', updateOnlineStatus);
+            window.addEventListener('offline', updateOnlineStatus);
+            updateOnlineStatus(); // Check initial status
+        }
+
+        // Initialize Service Worker for PWA
+        function initServiceWorker() {
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                        
+                        // Check for updates
+                        registration.addEventListener('updatefound', () => {
+                            const newWorker = registration.installing;
+                            newWorker.addEventListener('statechange', () => {
+                                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                                    console.log('New content available; please refresh.');
+                                }
+                            });
+                        });
+                    })
+                    .catch(err => {
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+            }
+        }
+
+        // Initialize Install Prompt
+        function initInstallPrompt() {
+            let deferredPrompt;
+            const installPrompt = document.getElementById('installPrompt');
+            const installButton = document.getElementById('installButton');
+            const dismissButton = document.getElementById('dismissInstall');
+
+            window.addEventListener('beforeinstallprompt', (e) => {
+                e.preventDefault();
+                deferredPrompt = e;
+                
+                if (!localStorage.getItem('installPromptDismissed')) {
+                    setTimeout(() => {
+                        installPrompt.style.display = 'block';
+                    }, 3000);
+                }
+            });
+
+            if (installButton) {
+                installButton.addEventListener('click', () => {
+                    installPrompt.style.display = 'none';
+                    
+                    if (deferredPrompt) {
+                        deferredPrompt.prompt();
+                        
+                        deferredPrompt.userChoice.then((choiceResult) => {
+                            if (choiceResult.outcome === 'accepted') {
+                                console.log('User accepted the install prompt');
+                            } else {
+                                console.log('User dismissed the install prompt');
+                            }
+                            deferredPrompt = null;
+                        });
+                    }
+                });
+            }
+
+            if (dismissButton) {
+                dismissButton.addEventListener('click', () => {
+                    installPrompt.style.display = 'none';
+                    localStorage.setItem('installPromptDismissed', 'true');
+                });
+            }
+        }
+
+        // Initialize Testimonials Carousel
+        function initTestimonialsCarousel() {
+            // Load Glide.js only if the carousel exists on the page
+            if (document.querySelector('.glide')) {
+                loadScript('https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/glide.min.js')
+                    .then(() => {
+                        new Glide('.glide', {
+                            type: 'carousel',
+                            perView: 3,
+                            gap: 20,
+                            autoplay: 4000,
+                            hoverpause: true,
+                            breakpoints: {
+                                992: { perView: 2 },
+                                768: { perView: 1 }
+                            }
+                        }).mount();
+                    })
+                    .catch(err => {
+                        console.error('Failed to load Glide.js:', err);
+                    });
+            }
+        }
+
+        // Initialize Social Sharing
+        function initSocialSharing() {
+            window.shareOnSocial = function(platform) {
+                const url = encodeURIComponent(window.location.href);
+                const title = encodeURIComponent(document.title);
+                const text = encodeURIComponent("Check out these amazing free educational resources from EduResources!");
+                let shareUrl = '';
+                
+                switch(platform) {
+                    case 'facebook':
+                        shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+                        break;
+                    case 'twitter':
+                        shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
+                        break;
+                    case 'whatsapp':
+                        shareUrl = `https://wa.me/?text=${text}%20${url}`;
+                        break;
+                    case 'instagram':
+                        shareUrl = `https://www.instagram.com/`;
+                        break;
+                    case 'linkedin':
+                        shareUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${title}&summary=${text}`;
+                        break;
+                }
+                
+                if (shareUrl) {
+                    window.open(shareUrl, '_blank', 'width=600,height=400');
+                }
+            };
+
+            window.shareViaEmail = function() {
+                const subject = encodeURIComponent("Check out these educational resources");
+                const body = encodeURIComponent(`I thought you might find these resources helpful:\n\n${window.location.href}\n\n- Shared via EduResources`);
+                window.location.href = `mailto:?subject=${subject}&body=${body}`;
+            };
+        }
+
+        // Helper function to load scripts
+        function loadScript(src, async = true) {
+            return new Promise((resolve, reject) => {
+                const script = document.createElement('script');
+                script.src = src;
+                script.async = async;
+                script.onload = resolve;
+                script.onerror = reject;
+                document.body.appendChild(script);
+            });
+        }
+    </script>
+</body>
+</html>
