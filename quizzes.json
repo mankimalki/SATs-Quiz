@@ -1,0 +1,54 @@
+[
+    {
+        "id": "quiz1",
+        "title": "GCSE Algebra Basics",
+        "examBoard": "aqa",
+        "qualification": "gcse",
+        "subject": "maths",
+        "topic": "algebra",
+        "difficulty": "medium",
+        "description": "Test your understanding of fundamental algebra concepts for GCSE",
+        "questionCount": 15,
+        "duration": 15,
+        "questionFile": "questions-algebra.json"
+    },
+    {
+        "id": "quiz2",
+        "title": "GCSE Shakespeare: Macbeth",
+        "examBoard": "edexcel",
+        "qualification": "gcse",
+        "subject": "english",
+        "topic": "shakespeare",
+        "difficulty": "hard",
+        "description": "Quiz on characters, themes and quotes from Macbeth",
+        "questionCount": 12,
+        "duration": 15,
+        "questionFile": "questions-macbeth.json"
+    },
+    {
+        "id": "quiz3",
+        "title": "KS3 Biology: Cells",
+        "examBoard": "all",
+        "qualification": "ks3",
+        "subject": "science",
+        "topic": "biology",
+        "difficulty": "easy",
+        "description": "Basic quiz on cell structure and function for Key Stage 3",
+        "questionCount": 8,
+        "duration": 8,
+        "questionFile": "questions-cells.json"
+    },
+    {
+        "id": "quiz4",
+        "title": "A-Level Organic Chemistry",
+        "examBoard": "ocr",
+        "qualification": "alevel",
+        "subject": "science",
+        "topic": "chemistry",
+        "difficulty": "hard",
+        "description": "Test your knowledge of organic chemistry concepts",
+        "questionCount": 15,
+        "duration": 20,
+        "questionFile": "questions-chemistry.json"
+    }
+]
