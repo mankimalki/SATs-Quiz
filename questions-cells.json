@@ -1,0 +1,442 @@
+[
+    {
+        "question": "Which of these structures is found in plant cells but not animal cells?",
+        "options": [
+            "Cell membrane",
+            "Nucleus",
+            "Chloroplast",
+            "Mitochondria"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Chloroplasts are found only in plant cells and are responsible for photosynthesis. Animal cells lack chloroplasts."
+    },
+    {
+        "question": "What is the function of the cell membrane?",
+        "options": [
+            "To control what enters and leaves the cell",
+            "To provide energy for the cell",
+            "To support and strengthen the cell",
+            "To make proteins"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The cell membrane is selectively permeable, controlling what substances enter and leave the cell."
+    },
+    {
+        "question": "Which organelle is known as the 'control center' of the cell?",
+        "options": [
+            "Mitochondria",
+            "Ribosome",
+            "Nucleus",
+            "Chloroplast"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The nucleus contains the cell's genetic material (DNA) which controls the cell's activities."
+    },
+    {
+        "question": "What is the function of mitochondria?",
+        "options": [
+            "Protein synthesis",
+            "Photosynthesis",
+            "Cellular respiration",
+            "Storage of water"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Mitochondria are the site of aerobic respiration, where energy is released from glucose."
+    },
+    {
+        "question": "Which of these is the correct order of size from smallest to largest?",
+        "options": [
+            "Cell → Nucleus → Chromosome → Gene",
+            "Gene → Chromosome → Nucleus → Cell",
+            "Chromosome → Gene → Cell → Nucleus",
+            "Nucleus → Gene → Chromosome → Cell"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Genes are sections of DNA that make up chromosomes, which are contained within the nucleus of a cell."
+    },
+    {
+        "question": "What is the purpose of the vacuole in plant cells?",
+        "options": [
+            "To store water and keep the cell rigid",
+            "To carry out photosynthesis",
+            "To control cell division",
+            "To transport proteins"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The permanent vacuole in plant cells contains cell sap and helps maintain the cell's structure through turgor pressure."
+    },
+    {
+        "question": "Which microscope has higher magnification - light or electron?",
+        "options": [
+            "Light microscope",
+            "Electron microscope",
+            "They have the same magnification",
+            "It depends on the specimen"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Electron microscopes use beams of electrons rather than light and can achieve much higher magnifications."
+    },
+    {
+        "question": "What is the function of ribosomes?",
+        "options": [
+            "Energy production",
+            "Protein synthesis",
+            "Cell movement",
+            "Waste removal"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Ribosomes are the site of protein synthesis, where amino acids are joined together to make proteins."
+    },
+    {
+        "question": "Which of these is NOT a difference between plant and animal cells?",
+        "options": [
+            "Plant cells have chloroplasts",
+            "Animal cells have a cell wall",
+            "Plant cells have a permanent vacuole",
+            "Animal cells store glycogen"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Animal cells do NOT have a cell wall - this is a feature of plant cells, fungi, and bacteria."
+    },
+    {
+        "question": "What is the approximate size of a typical animal cell?",
+        "options": [
+            "0.1-0.5 mm",
+            "0.01-0.05 mm",
+            "1-5 mm",
+            "10-50 mm"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Most animal cells are between 10-50 micrometers (0.01-0.05 mm) in diameter."
+    },
+    {
+        "question": "Which of these structures gives plant cells their regular shape?",
+        "options": [
+            "Cell membrane",
+            "Cytoplasm",
+            "Cell wall",
+            "Nucleus"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The rigid cell wall made of cellulose gives plant cells their regular, box-like shape."
+    },
+    {
+        "question": "What is the jelly-like substance where most cell activities occur?",
+        "options": [
+            "Nucleus",
+            "Cytoplasm",
+            "Cell membrane",
+            "Vacuole"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The cytoplasm is the jelly-like substance where most chemical reactions take place."
+    },
+    {
+        "question": "Which of these is NOT found in a bacterial cell?",
+        "options": [
+            "Cell membrane",
+            "Cytoplasm",
+            "Nucleus",
+            "Ribosomes"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Bacterial cells are prokaryotic and do not have a true nucleus - their DNA floats freely in the cytoplasm."
+    },
+    {
+        "question": "What is the function of the chloroplast?",
+        "options": [
+            "Cellular respiration",
+            "Protein synthesis",
+            "Photosynthesis",
+            "Waste storage"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Chloroplasts contain chlorophyll and are the site of photosynthesis in plant cells."
+    },
+    {
+        "question": "Which of these would you use to observe cells at high magnification?",
+        "options": [
+            "Hand lens",
+            "Light microscope",
+            "Telescope",
+            "Magnifying glass"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A light microscope is the appropriate instrument for observing cells at high magnification."
+    },
+    {
+        "question": "What is the purpose of staining cells before microscopy?",
+        "options": [
+            "To kill the cells",
+            "To make cell structures more visible",
+            "To increase magnification",
+            "To preserve the cells"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Stains like iodine or methylene blue make specific structures more visible by increasing contrast."
+    },
+    {
+        "question": "Which of these is the correct equation for photosynthesis?",
+        "options": [
+            "Carbon dioxide + water → glucose + oxygen",
+            "Glucose + oxygen → carbon dioxide + water",
+            "Oxygen + water → glucose + carbon dioxide",
+            "Glucose + carbon dioxide → oxygen + water"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Photosynthesis converts carbon dioxide and water into glucose and oxygen using light energy."
+    },
+    {
+        "question": "What is the function of the cell wall?",
+        "options": [
+            "To control what enters the cell",
+            "To provide structural support",
+            "To store genetic material",
+            "To produce energy"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The cell wall provides structural support and protection to plant cells, fungi, and bacteria."
+    },
+    {
+        "question": "Which of these is NOT a feature of a typical animal cell?",
+        "options": [
+            "Cell membrane",
+            "Chloroplast",
+            "Cytoplasm",
+            "Mitochondria"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Chloroplasts are found only in plant cells and some protists, not in animal cells."
+    },
+    {
+        "question": "What is the name of the process by which cells divide?",
+        "options": [
+            "Respiration",
+            "Mitosis",
+            "Osmosis",
+            "Diffusion"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Mitosis is the process of cell division that produces two genetically identical daughter cells."
+    },
+    {
+        "question": "Which of these structures transports materials within the cell?",
+        "options": [
+            "Endoplasmic reticulum",
+            "Nucleolus",
+            "Cell wall",
+            "Vacuole"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The endoplasmic reticulum is a network of membranes that transports materials through the cell."
+    },
+    {
+        "question": "What happens to a plant cell when it loses water?",
+        "options": [
+            "It becomes turgid",
+            "It becomes plasmolysed",
+            "It bursts",
+            "It divides"
+        ],
+        "correctAnswer": 1,
+        "explanation": "When plant cells lose water, the membrane pulls away from the cell wall in a process called plasmolysis."
+    },
+    {
+        "question": "Which of these is NOT a component of the cell theory?",
+        "options": [
+            "All living things are made of cells",
+            "Cells are the basic unit of life",
+            "All cells have a nucleus",
+            "New cells come from existing cells"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Prokaryotic cells (like bacteria) do not have a nucleus, so this is not part of cell theory."
+    },
+    {
+        "question": "What is the function of the Golgi apparatus?",
+        "options": [
+            "Energy production",
+            "Modifying and packaging proteins",
+            "DNA replication",
+            "Photosynthesis"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The Golgi apparatus modifies, sorts, and packages proteins for secretion or use within the cell."
+    },
+    {
+        "question": "Which of these would you expect to find in a root hair cell but not a leaf cell?",
+        "options": [
+            "Chloroplasts",
+            "Large permanent vacuole",
+            "Mitochondria",
+            "Cell wall"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Root hair cells don't carry out photosynthesis so they don't need chloroplasts, unlike leaf cells."
+    },
+    {
+        "question": "What is the name of the green pigment found in chloroplasts?",
+        "options": [
+            "Hemoglobin",
+            "Melanin",
+            "Chlorophyll",
+            "Carotene"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Chlorophyll is the green pigment that absorbs light energy for photosynthesis."
+    },
+    {
+        "question": "Which of these cells would be best adapted for absorbing nutrients?",
+        "options": [
+            "A cell with a large surface area",
+            "A cell with a thick cell wall",
+            "A cell with many chloroplasts",
+            "A cell with no nucleus"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Cells adapted for absorption (like root hair cells) have large surface areas to maximize nutrient uptake."
+    },
+    {
+        "question": "What is the main function of white blood cells?",
+        "options": [
+            "To carry oxygen",
+            "To fight infection",
+            "To clot blood",
+            "To store energy"
+        ],
+        "correctAnswer": 1,
+        "explanation": "White blood cells are part of the immune system and help defend against pathogens."
+    },
+    {
+        "question": "Which of these is a unicellular organism?",
+        "options": [
+            "Human",
+            "Oak tree",
+            "Amoeba",
+            "Mushroom"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Amoeba is a single-celled (unicellular) organism, while the others are multicellular."
+    },
+    {
+        "question": "What happens to red blood cells when placed in pure water?",
+        "options": [
+            "They shrink",
+            "They swell and may burst",
+            "They remain unchanged",
+            "They divide"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Water moves into the cells by osmosis, causing them to swell and potentially burst (lyse)."
+    },
+    {
+        "question": "Which of these is NOT a specialized cell?",
+        "options": [
+            "Root hair cell",
+            "Sperm cell",
+            "Palisade cell",
+            "Epithelial cell"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Epithelial cells are basic lining cells, while the others are highly specialized for specific functions."
+    },
+    {
+        "question": "What is the function of cilia in some animal cells?",
+        "options": [
+            "To increase surface area",
+            "To help with movement",
+            "To store nutrients",
+            "To produce energy"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Cilia are hair-like structures that either move the cell itself or move substances past the cell."
+    },
+    {
+        "question": "Which of these cells would contain the most mitochondria?",
+        "options": [
+            "Skin cell",
+            "Muscle cell",
+            "Fat cell",
+            "Red blood cell"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Muscle cells require lots of energy for contraction, so they contain many mitochondria."
+    },
+    {
+        "question": "What is the purpose of the nucleolus?",
+        "options": [
+            "To control the cell",
+            "To make ribosomes",
+            "To store water",
+            "To produce ATP"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The nucleolus is a region within the nucleus where ribosome production occurs."
+    },
+    {
+        "question": "Which of these is NOT a difference between light and electron microscopes?",
+        "options": [
+            "Electron microscopes have higher magnification",
+            "Light microscopes can view living specimens",
+            "Electron microscopes use light waves",
+            "Light microscopes are cheaper"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Electron microscopes use beams of electrons, not light waves, to create images."
+    },
+    {
+        "question": "What is the function of lysosomes?",
+        "options": [
+            "Photosynthesis",
+            "Protein synthesis",
+            "Breaking down waste",
+            "DNA replication"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Lysosomes contain digestive enzymes that break down waste materials and cellular debris."
+    },
+    {
+        "question": "Which of these would be the best unit for measuring cell size?",
+        "options": [
+            "Centimeters",
+            "Millimeters",
+            "Micrometers",
+            "Kilometers"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Most cells are measured in micrometers (μm), as they are typically 10-100 μm in size."
+    },
+    {
+        "question": "What is the main function of red blood cells?",
+        "options": [
+            "Fighting infection",
+            "Carrying oxygen",
+            "Producing antibodies",
+            "Storing fat"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Red blood cells contain hemoglobin which binds and transports oxygen around the body."
+    },
+    {
+        "question": "Which of these is NOT a function of the cytoplasm?",
+        "options": [
+            "Site of chemical reactions",
+            "Supporting cell organelles",
+            "Storing genetic material",
+            "Transporting materials"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Genetic material is stored in the nucleus, not the cytoplasm."
+    },
+    {
+        "question": "What happens to a plant cell when it gains water?",
+        "options": [
+            "It becomes turgid",
+            "It shrinks",
+            "It bursts",
+            "It divides"
+        ],
+        "correctAnswer": 0,
+        "explanation": "When plant cells gain water, they become turgid (swollen and firm) due to the rigid cell wall."
+    }
+]
